@@ -26,7 +26,7 @@ class ModifyTopicsAddInstagram extends Migration
     public function down()
     {
         Schema::table('topics', function (Blueprint $table) {
-            $table->dropColumn('anonymous');   
+            $table->dropColumn('instagram');   
         });
     }
 }

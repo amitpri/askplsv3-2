@@ -19,7 +19,7 @@ class ModifyDoctorsAddColumns extends Migration
     public function down()
     {
         Schema::table('doctors', function (Blueprint $table) {
-            $table->dropColumn('qualification'); 
+     //       $table->dropColumn('qualification'); 
             $table->dropColumn('exp'); 
         });
     }

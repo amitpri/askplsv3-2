@@ -21,7 +21,7 @@ class ModifyMembershipAddTopicable extends Migration
  
     public function down()
     {
-        Schema::table('doctors', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('topicable_id');   
             $table->dropColumn('topicable_type'); 
         });

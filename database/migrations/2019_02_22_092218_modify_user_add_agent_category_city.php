@@ -14,8 +14,8 @@ class ModifyUserAddAgentCategoryCity extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {    
-            $table->integer('category_id')->add(); 
-            $table->integer('city_id')->add(); 
+            $table->integer('category_id')->nullable()->add(); 
+            $table->integer('city_id')->nullable()->add(); 
         });
     }
 

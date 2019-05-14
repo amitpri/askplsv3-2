@@ -26,7 +26,7 @@ class ModifyDoctorAddAdminURL extends Migration
     public function down()
     {
         Schema::table('doctors', function (Blueprint $table) {
-            $table->dropColumn('qualification');   
+            $table->dropColumn('admin_url');   
         });
     }
 }
