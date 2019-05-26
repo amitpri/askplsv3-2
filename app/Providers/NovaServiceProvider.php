@@ -196,9 +196,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     new TopicCount,
                     new ReviewCount, 
 
-                    new \Tightenco\NovaGoogleAnalytics\PageViewsMetric,
-                    new \Tightenco\NovaGoogleAnalytics\VisitorsMetric,
-                    new \Tightenco\NovaGoogleAnalytics\MostVisitedPagesCard,
+             //       new \Tightenco\NovaGoogleAnalytics\PageViewsMetric,
+             //       new \Tightenco\NovaGoogleAnalytics\VisitorsMetric,
+             //       new \Tightenco\NovaGoogleAnalytics\MostVisitedPagesCard,
   
 
 
