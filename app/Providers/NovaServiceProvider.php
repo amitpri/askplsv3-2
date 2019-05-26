@@ -262,7 +262,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
             return [
               
-                  new \Askpls\Payments\Payments(),
+          //        new \Askpls\Payments\Payments(),
 
             ];
         }
