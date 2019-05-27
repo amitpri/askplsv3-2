@@ -192,7 +192,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         if( $loggedinrole == "super"){
 
                 return [  
-          //          new \Askpls\Workspacesummary\Workspacesummary(),
+              //      new \Askpls\Workspacesummary\Workspacesummary(),
+                    new \Askpls\Categorysummary\Categorysummary(),
                     new TopicCount,
                     new ReviewCount, 
 

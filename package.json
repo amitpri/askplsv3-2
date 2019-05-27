@@ -15,7 +15,11 @@
         "build-workspacesummary": "cd nova-components/Workspacesummary && npm run dev",
         "build-workspacesummary-prod": "cd nova-components/Workspacesummary && npm run prod",
         "build-payments": "cd nova-components/Payments && npm run dev",
-        "build-payments-prod": "cd nova-components/Payments && npm run prod"
+        "build-payments-prod": "cd nova-components/Payments && npm run prod",
+        "build-category": "cd nova-components/Category && npm run dev",
+        "build-category-prod": "cd nova-components/Category && npm run prod",
+        "build-Categorysummary": "cd nova-components/Categorysummary && npm run dev",
+        "build-Categorysummary-prod": "cd nova-components/Categorysummary && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.18",
