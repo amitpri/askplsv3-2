@@ -188,6 +188,7 @@ class HomeController extends Controller
             'catsel_type' => $type,
             'catsel_name' => $name, 
             'topicable_type' => $dbtype,
+            'paid' => 1, 
         ]);
 
         return $userupdate;
