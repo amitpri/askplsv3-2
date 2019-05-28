@@ -1,9 +1,11 @@
 <template>
-    <card class="flex flex-col items-center justify-center"  v-if="catsel_status < 1" >
-        <div class="px-3 py-3" >
+ 
+    <card class="flex flex-col items-center justify-center"   >
+        <h1 v-if="catsel_refresh == 1">Please wait.. refreshing page</h1>
+        <div class="px-3 py-3" v-if="catsel_status < 1">
             <h1 class="text-center text-3xl text-80 font-light">Define Categories</h1><br>
 
-            <h4 v-if="topics.length < 1"  class="font-light">AskPls supports a number of categories based on your profession. Please select from below list to define your profession category</h4>
+            <h4  class="font-light">AskPls supports a number of categories based on your profession. Please select from below list to define your profession category</h4>
 
             <br><br>
 
@@ -94,6 +96,7 @@ export default {
                 inLawyer: "",
                 inFitness: "",
                 catsel_status: -1,
+                catsel_refresh: -1,
                 
                 } 
             },
@@ -132,6 +135,10 @@ export default {
         
                             this.catsel_status = 1;
 
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
+
                         });
 
                 }
@@ -157,6 +164,10 @@ export default {
                         .then(response => {
         
                             this.catsel_status = 1;
+
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
 
                         });
 
@@ -185,6 +196,10 @@ export default {
                         .then(response => {
         
                             this.catsel_status = 1;
+
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
 
                         });
 
@@ -217,6 +232,10 @@ export default {
         
                             this.catsel_status = 1;
 
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
+
                         });
                 }
 
@@ -246,6 +265,10 @@ export default {
             
                                 this.catsel_status = 1;
 
+                                this.catsel_refresh = 1;
+
+                                this.$router.go(this.$router.currentRoute);
+
                             });
                 }
             }
@@ -274,6 +297,10 @@ export default {
         
                             this.catsel_status = 1;
 
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
+
                         });
                 }
 
@@ -296,6 +323,10 @@ export default {
                     .then(response => {
     
                         this.catsel_status = 1;
+
+                        this.catsel_refresh = 1;
+
+                        this.$router.go(this.$router.currentRoute);
 
                     });
 
@@ -324,6 +355,10 @@ export default {
                         .then(response => {
         
                             this.catsel_status = 1;
+
+                            this.catsel_refresh = 1;
+
+                            this.$router.go(this.$router.currentRoute);
 
                         });
 
