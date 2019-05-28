@@ -316,6 +316,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -324,9 +329,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
 
             id: "",
-            inpId: "",
-            topic: "",
-            topics: [],
             inCompany: "",
             inDoctor: "",
             inSchool: "",
@@ -578,6 +580,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         _this9.$router.go(_this9.$router.currentRoute);
                     });
                 }
+            }
+        }, selPersonal: function selPersonal() {
+            var _this10 = this;
+
+            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+            if (c == true) {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'personal'
+
+                    }
+
+                }).then(function (response) {
+
+                    _this10.catsel_status = 1;
+
+                    _this10.catsel_refresh = 1;
+
+                    _this10.$router.go(_this10.$router.currentRoute);
+                });
             }
         }
     }
@@ -984,6 +1009,41 @@ var render = function() {
                     ])
                   ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("hr")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label",
+                    attrs: { for: "inlineCheckbox1" }
+                  },
+                  [
+                    _c("h2", [
+                      _vm._v("I Just want to use it for Personal reviews")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("td", [_vm._v("  ")]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-default btn-primary",
+                    attrs: { type: "button" },
+                    on: { click: _vm.selPersonal }
+                  },
+                  [_vm._v("Select")]
+                )
               ])
             ])
           ])

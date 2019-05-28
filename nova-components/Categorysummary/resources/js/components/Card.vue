@@ -8,10 +8,9 @@
             <h4  class="font-light">AskPls supports a number of categories based on your profession. Please select from below list to define your profession category</h4>
 
             <br><br>
-
  
             <div> 
-
+ 
                 <table  class="table w-full">
                     <thead>
                         <tr>
@@ -63,18 +62,23 @@
                         </tr>
                     </tbody>
                 </table>
-                                    
 
+                <hr>
+                                    
             </div> 
- 
-      
+
+            <br>
+            <tr>
+                <td> <label class="form-check-label" for="inlineCheckbox1"><h2>I Just want to use it for Personal reviews</h2></label></td>
+                 <td>&nbsp; </td> 
+                <td><button @click="selPersonal" type="button" class="btn btn-default btn-primary">Select</button> </td>
+            </tr> 
             
         </div>
     </card>
 </template>
 
 <script>
- 
 
 export default {
     props: [
@@ -83,10 +87,7 @@ export default {
     data: () => {
             return {
 
-                id:"", 
-                inpId: "", 
-                topic: "",
-                topics: [],
+                id:"",    
                 inCompany: "",
                 inDoctor: "",
                 inSchool: "",
@@ -365,6 +366,31 @@ export default {
                 }
 
             }
+        },selPersonal:function(){ 
+ 
+            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+            if( c == true){
+
+                axios.get('/categorysummary/post' ,{
+                                params: {
+
+                                    type : 'personal',  
+
+                                    }
+
+                                })
+                    .then(response => {
+    
+                        this.catsel_status = 1;
+
+                        this.catsel_refresh = 1;
+
+                        this.$router.go(this.$router.currentRoute);
+
+                    });
+
+            } 
         },
     }
 }
