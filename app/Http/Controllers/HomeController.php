@@ -162,16 +162,9 @@ class HomeController extends Controller
     {
         $loggedinid = Auth::user()->id; 
           
-        $workspaces = DB::select('SELECT  a.`id`, a.`user_id`,  a.`workspace`,  a.`company`, a.`url` 
-                                        FROM `tenants` a ,  `tenant_users` b 
-                                        WHERE a.`id` = b.`tenant_id`
-                                        AND a.`status` = 1
-                                        AND b.`status` = 1
-                                        AND a.`user_id` = :userid
-                                        ORDER BY a.`updated_at` DESC
-                                        limit 10',[ 'userid' => $loggedinid ]);
+        $userdata = User::where('id',$loggedinid)->first(['id', 'catsel_status']);
     
-        return $workspaces;  
+        return $userdata->catsel_status;  
     }
 
     public function categorysummarypost(Request $request)

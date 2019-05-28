@@ -1,6 +1,6 @@
 <template>
-    <card class="flex flex-col items-center justify-center">
-        <div class="px-3 py-3">
+    <card class="flex flex-col items-center justify-center"  v-if="catsel_status < 1" >
+        <div class="px-3 py-3" >
             <h1 class="text-center text-3xl text-80 font-light">Define Categories</h1><br>
 
             <h4 v-if="topics.length < 1"  class="font-light">AskPls supports a number of categories based on your profession. Please select from below list to define your profession category</h4>
@@ -8,7 +8,7 @@
             <br><br>
 
  
-            <div > 
+            <div> 
 
                 <table  class="table w-full">
                     <thead>
@@ -64,33 +64,7 @@
                                     
 
             </div> 
-
-            <div v-if="topics.length > 0" >
-                <div >
-
-                    <a href="/portal/work" class="btn btn-default btn-primary">New Workspace</a> </br> 
  
-                    <table  class="table w-full">
-                        <thead>
-                            <tr>
-                                <th class="text-left">Workspace</th>
-                                <th class="text-left">URL</th>
-                                <th class="text-left">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="topic in topics" >
-                                <td>{{ topic.workspace }}</td>
-                                <td>{{ topic.url }}</td> 
-                                <td><a class="btn btn-default btn-primary" href="/join">Use</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                                        
-
-                </div>
-
-            </div>
       
             
         </div>
@@ -119,6 +93,7 @@ export default {
                 inRestaurant: "",
                 inLawyer: "",
                 inFitness: "",
+                catsel_status: -1,
                 
                 } 
             },
@@ -127,7 +102,7 @@ export default {
         axios.get('/categorysummary/get' )
                     .then(response => {
     
-                        this.topics = response.data; 
+                        this.catsel_status = response.data; 
 
                     });
     },
@@ -145,17 +120,17 @@ export default {
                 if( c == true){
 
                     axios.get('/categorysummary/post' ,{
-                                    params: {
+                        params: {
 
-                                        type : 'company', 
-                                        name : this.inCompany,
+                            type : 'company', 
+                            name : this.inCompany,
 
-                                        }
+                            }
 
-                                    })
+                        })
                         .then(response => {
         
-                            alert('done');
+                            this.catsel_status = 1;
 
                         });
 
@@ -163,23 +138,29 @@ export default {
 
             }
 
-            
         },selDoctor:function(){ 
              
-            axios.get('/categorysummary/post' ,{
-                                params: {
+            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
 
-                                    type : 'doctor', 
-                                    name : this.inDoctor,
+                if( c == true){
 
-                                    }
 
-                                })
-                    .then(response => {
-    
-                        alert('done');
+                    axios.get('/categorysummary/post' ,{
+                                    params: {
 
-                    });
+                                        type : 'doctor', 
+                                        name : this.inDoctor,
+
+                                        }
+
+                                    })
+                        .then(response => {
+        
+                            this.catsel_status = 1;
+
+                        });
+
+                }
         },selSchool:function(){ 
             
             if( this.inSchool  == ''){
@@ -188,23 +169,28 @@ export default {
 
             }else{
 
-                axios.get('/categorysummary/post' ,{
-                                params: {
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
 
-                                    type : 'school', 
-                                    name : this.inSchool,
+                if( c == true){
 
-                                    }
+                    axios.get('/categorysummary/post' ,{
+                                    params: {
 
-                                })
-                    .then(response => {
-    
-                        alert('done');
+                                        type : 'school', 
+                                        name : this.inSchool,
 
-                    });
+                                        }
+
+                                    })
+                        .then(response => {
+        
+                            this.catsel_status = 1;
+
+                        });
+
+                }
 
             }
-
             
         },selCollege:function(){ 
             
@@ -214,7 +200,11 @@ export default {
 
             }else{
 
-                axios.get('/categorysummary/post' ,{
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                if( c == true){
+
+                    axios.get('/categorysummary/post' ,{
                                     params: {
 
                                         type : 'college', 
@@ -225,9 +215,10 @@ export default {
                                     })
                         .then(response => {
         
-                            alert('done');
+                            this.catsel_status = 1;
 
                         });
+                }
 
             }
         },selHotel:function(){ 
@@ -238,20 +229,25 @@ export default {
 
             }else{
 
-                axios.get('/categorysummary/post' ,{
-                                    params: {
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
 
-                                        type : 'hotel', 
-                                        name : this.inHotel,
+                if( c == true){
 
-                                        }
+                    axios.get('/categorysummary/post' ,{
+                                        params: {
 
-                                    })
-                        .then(response => {
-        
-                            alert('done');
+                                            type : 'hotel', 
+                                            name : this.inHotel,
 
-                        });
+                                            }
+
+                                        })
+                            .then(response => {
+            
+                                this.catsel_status = 1;
+
+                            });
+                }
             }
         },selRestaurant:function(){ 
             
@@ -261,7 +257,11 @@ export default {
 
             }else{
 
-                axios.get('/categorysummary/post' ,{
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                if( c == true){
+
+                    axios.get('/categorysummary/post' ,{
                                     params: {
 
                                         type : 'restaurant', 
@@ -272,14 +272,19 @@ export default {
                                     })
                         .then(response => {
         
-                            alert('done');
+                            this.catsel_status = 1;
 
                         });
+                }
 
             }
         },selLawyer:function(){ 
              
-            axios.get('/categorysummary/post' ,{
+            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                if( c == true){
+
+                    axios.get('/categorysummary/post' ,{
                                 params: {
 
                                     type : 'lawyer', 
@@ -290,9 +295,11 @@ export default {
                                 })
                     .then(response => {
     
-                        alert('done');
+                        this.catsel_status = 1;
 
                     });
+
+                }
         },selFitness:function(){ 
             
             if( this.inFitness  == ''){
@@ -301,7 +308,11 @@ export default {
 
             }else{
 
-                axios.get('/categorysummary/post' ,{
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                if( c == true){
+
+                    axios.get('/categorysummary/post' ,{
                                     params: {
 
                                         type : 'fitness', 
@@ -312,9 +323,11 @@ export default {
                                     })
                         .then(response => {
         
-                            alert('done');
+                            this.catsel_status = 1;
 
                         });
+
+                }
 
             }
         },
