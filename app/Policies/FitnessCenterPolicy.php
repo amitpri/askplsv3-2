@@ -97,6 +97,7 @@ class FitnessCenterPolicy
 
         $loggedinrole = Auth::user()->role;
         $loggedintopicable_type = Auth::user()->topicable_type;
+        $loggedincatsel_status = Auth::user()->catsel_status;
 
 
         if ( $loggedinrole == 'super' ) {
@@ -119,7 +120,7 @@ class FitnessCenterPolicy
             }
 
            
-        }elseif( $loggedintopicable_type == 'App\Company'){
+        }elseif( $loggedincatsel_status == 0 || $loggedintopicable_type == 'App\Company'){
 
             return 1 === 2;
 

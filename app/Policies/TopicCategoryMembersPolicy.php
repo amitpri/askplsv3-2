@@ -116,13 +116,14 @@ class TopicCategoryMembersPolicy
         $topicable_id = Auth::user()->topicable_id;
         $topicable_type = Auth::user()->topicable_type;
         $loggedintopicable_type = Auth::user()->topicable_type;
+        $loggedincatsel_status = Auth::user()->catsel_status;
 
         $loggedinrole = Auth::user()->role;
         
         if ( $loggedinrole == 'super' ) {
 
             return 1 === 1;
-        }elseif( $loggedinrole == 'agent'  ){
+        }elseif( $loggedincatsel_status == 0 || $loggedinrole == 'agent'  ){
 
             return 1 === 2;
 

@@ -128,6 +128,7 @@ if ( $loggedinrole == 'super' ) {
 
         $loggedinrole = Auth::user()->role;
         $loggedintopicable_type = Auth::user()->topicable_type;
+        $loggedincatsel_status = Auth::user()->catsel_status;
         
         if ( $loggedinrole == 'super' ) {
 
@@ -137,9 +138,17 @@ if ( $loggedinrole == 'super' ) {
 
             return 1 === 2;
 
-        }elseif( $loggedintopicable_type == 'App\Company'){
+        }elseif(  $loggedinrole == 'user' ){
 
-            return 1 === 2;
+             if( $loggedincatsel_status == 0 || $loggedintopicable_type == 'App\Company' ){
+
+                return 1 === 2;
+
+             }else{
+
+                return 1 === 1;
+
+             }
 
         }else
         {

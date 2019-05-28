@@ -134,12 +134,13 @@ class SettingPolicy
         $loggedinid = Auth::user()->id;
 
         $loggedinrole = Auth::user()->role;
+        $loggedincatsel_status = Auth::user()->catsel_status;
         
         if ( $loggedinrole == 'super' ) {
 
             return 1 === 1;
 
-        }elseif( $loggedinrole == 'agent'  ){
+        }elseif( $loggedincatsel_status == 0 || $loggedinrole == 'agent'  ){
 
             return 1 === 2;
 
