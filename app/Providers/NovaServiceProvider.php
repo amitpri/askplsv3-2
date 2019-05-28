@@ -193,7 +193,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
                 return [  
               //      new \Askpls\Workspacesummary\Workspacesummary(),
-                    new \Askpls\Categorysummary\Categorysummary(),
+                    
                     new TopicCount,
                     new ReviewCount, 
 
@@ -221,6 +221,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
 
                 return [ 
+
+                    new \Askpls\Categorysummary\Categorysummary(),
                     new GroupCount,
                     new ProfileCount,
                     new ReviewCount,

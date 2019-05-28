@@ -157,4 +157,36 @@ class HomeController extends Controller
         
         
     }
+
+    public function categorysummaryget(Request $request)
+    {
+        $loggedinid = Auth::user()->id; 
+          
+        $workspaces = DB::select('SELECT  a.`id`, a.`user_id`,  a.`workspace`,  a.`company`, a.`url` 
+                                        FROM `tenants` a ,  `tenant_users` b 
+                                        WHERE a.`id` = b.`tenant_id`
+                                        AND a.`status` = 1
+                                        AND b.`status` = 1
+                                        AND a.`user_id` = :userid
+                                        ORDER BY a.`updated_at` DESC
+                                        limit 10',[ 'userid' => $loggedinid ]);
+    
+        return $workspaces;  
+    }
+
+    public function categorysummarypost(Request $request)
+    {
+        $type = $request->type; 
+        $name = $request->name; 
+
+        $loggedinid = Auth::user()->id;
+
+        $userupdate = User::where('id', $loggedinid)->update([
+            'catsel_status' => 1,
+            'catsel_type' => $type,
+            'catsel_name' => $name, 
+        ]);
+
+        return $userupdate;
+    }
 }

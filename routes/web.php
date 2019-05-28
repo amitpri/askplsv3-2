@@ -103,3 +103,7 @@ Route::get('/s/{id}', 'CategoryController@schools');
 Route::get('/instagram', 'TopicController@instagram'); 
 Route::get('/youtube', 'TopicController@youtube'); 
 Route::get('/pictures', 'TopicController@pictures');  
+
+
+Route::get('/categorysummary/get','HomeController@categorysummaryget'); 
+Route::get('/categorysummary/post','HomeController@categorysummarypost'); 

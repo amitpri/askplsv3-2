@@ -280,6 +280,66 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -290,7 +350,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             id: "",
             inpId: "",
             topic: "",
-            topics: []
+            topics: [],
+            inCompany: "",
+            inDoctor: "",
+            inSchool: "",
+            inCollege: "",
+            inHotel: "",
+            inRestaurant: "",
+            inLawyer: "",
+            inFitness: ""
 
         };
     },
@@ -298,16 +366,166 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     mounted: function mounted() {
         var _this = this;
 
-        axios.get('/workspace/get').then(function (response) {
+        axios.get('/categorysummary/get').then(function (response) {
 
             _this.topics = response.data;
         });
     },
 
     methods: {
-        workspaceshow: function workspaceshow() {
+        selCompany: function selCompany() {
 
-            Nova.request().post('/portal/work');
+            if (this.inCompany == '') {
+
+                alert('Please enter the company name');
+            } else {
+
+                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                if (c == true) {
+
+                    axios.get('/categorysummary/post', {
+                        params: {
+
+                            type: 'company',
+                            name: this.inCompany
+
+                        }
+
+                    }).then(function (response) {
+
+                        alert('done');
+                    });
+                }
+            }
+        }, selDoctor: function selDoctor() {
+
+            axios.get('/categorysummary/post', {
+                params: {
+
+                    type: 'doctor',
+                    name: this.inDoctor
+
+                }
+
+            }).then(function (response) {
+
+                alert('done');
+            });
+        }, selSchool: function selSchool() {
+
+            if (this.inSchool == '') {
+
+                alert('Please enter the school name');
+            } else {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'school',
+                        name: this.inSchool
+
+                    }
+
+                }).then(function (response) {
+
+                    alert('done');
+                });
+            }
+        }, selCollege: function selCollege() {
+
+            if (this.inCollege == '') {
+
+                alert('Please enter the college name');
+            } else {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'college',
+                        name: this.inCollege
+
+                    }
+
+                }).then(function (response) {
+
+                    alert('done');
+                });
+            }
+        }, selHotel: function selHotel() {
+
+            if (this.inHotel == '') {
+
+                alert('Please enter the hotel name');
+            } else {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'hotel',
+                        name: this.inHotel
+
+                    }
+
+                }).then(function (response) {
+
+                    alert('done');
+                });
+            }
+        }, selRestaurant: function selRestaurant() {
+
+            if (this.inRestaurant == '') {
+
+                alert('Please enter the restaurant name');
+            } else {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'restaurant',
+                        name: this.inRestaurant
+
+                    }
+
+                }).then(function (response) {
+
+                    alert('done');
+                });
+            }
+        }, selLawyer: function selLawyer() {
+
+            axios.get('/categorysummary/post', {
+                params: {
+
+                    type: 'lawyer',
+                    name: this.inLawyer
+
+                }
+
+            }).then(function (response) {
+
+                alert('done');
+            });
+        }, selFitness: function selFitness() {
+
+            if (this.inFitness == '') {
+
+                alert('Please enter the Fitness center name');
+            } else {
+
+                axios.get('/categorysummary/post', {
+                    params: {
+
+                        type: 'fitness',
+                        name: this.inFitness
+
+                    }
+
+                }).then(function (response) {
+
+                    alert('done');
+                });
+            }
         }
     }
 });
@@ -326,17 +544,370 @@ var render = function() {
     [
       _c("div", { staticClass: "px-3 py-3" }, [
         _c("h1", { staticClass: "text-center text-3xl text-80 font-light" }, [
-          _vm._v("Workspaces")
+          _vm._v("Define Categories")
         ]),
         _c("br"),
         _vm._v(" "),
         _vm.topics.length < 1
-          ? _c("h2", { staticClass: "font-light" }, [
+          ? _c("h4", { staticClass: "font-light" }, [
               _vm._v(
-                "No Category Created. You won't be able to use Private review feature of AskPls."
+                "AskPls supports a number of categories based on your profession. Please select from below list to define your profession category"
               )
             ])
           : _vm._e(),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _c("table", { staticClass: "table w-full" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", { staticClass: "text-left" }, [_vm._v("Category")]),
+                _vm._v(" "),
+                _c("th", { staticClass: "text-left" }, [_vm._v("Name")]),
+                _vm._v(" "),
+                _c("th", { staticClass: "text-left" }, [_vm._v("Action")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v(" Company")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inCompany,
+                        expression: "inCompany"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter Company Name" },
+                    domProps: { value: _vm.inCompany },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inCompany = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selCompany }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" Doctor")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inDoctor,
+                        expression: "inDoctor"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter Doctor Name" },
+                    domProps: { value: _vm.inDoctor },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inDoctor = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selDoctor }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" School")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inSchool,
+                        expression: "inSchool"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter School Name" },
+                    domProps: { value: _vm.inSchool },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inSchool = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selSchool }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" College")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inCollege,
+                        expression: "inCollege"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter College Name" },
+                    domProps: { value: _vm.inCollege },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inCollege = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selCollege }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" Hotel")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inHotel,
+                        expression: "inHotel"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter Hotel Name" },
+                    domProps: { value: _vm.inHotel },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inHotel = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selHotel }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" Restaurant")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inRestaurant,
+                        expression: "inRestaurant"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "Enter Restaurant Name"
+                    },
+                    domProps: { value: _vm.inRestaurant },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inRestaurant = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selRestaurant }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" Lawyer")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inLawyer,
+                        expression: "inLawyer"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: { type: "text", placeholder: "Enter Lawyer Name" },
+                    domProps: { value: _vm.inLawyer },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inLawyer = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selLawyer }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v(" Fitness Centers")]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inFitness,
+                        expression: "inFitness"
+                      }
+                    ],
+                    staticClass: "form-control form-control-sm",
+                    staticStyle: { border: "2px thick blue" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "Enter Fitness Center Name"
+                    },
+                    domProps: { value: _vm.inFitness },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.inFitness = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-default btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.selFitness }
+                    },
+                    [_vm._v("Select")]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _vm.topics.length > 0
           ? _c("div", [
