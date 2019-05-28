@@ -174,10 +174,20 @@ class HomeController extends Controller
 
         $loggedinid = Auth::user()->id;
 
+        if( $type == 'company'){  $dbtype = 'App\Company';     }
+        if( $type == 'doctor'){  $dbtype = 'App\Doctor';     }
+        if( $type == 'hotel'){  $dbtype = 'App\Hotel';     }
+        if( $type == 'restaurant'){  $dbtype = 'App\Restaurant';     }
+        if( $type == 'school'){  $dbtype = 'App\School';     } 
+        if( $type == 'college'){  $dbtype = 'App\College';     }
+        if( $type == 'lawyer'){  $dbtype = 'App\Lawyer';     }
+        if( $type == 'fitness'){  $dbtype = 'App\FitnessCenter';     }
+
         $userupdate = User::where('id', $loggedinid)->update([
             'catsel_status' => 1,
             'catsel_type' => $type,
             'catsel_name' => $name, 
+            'topicable_type' => $dbtype,
         ]);
 
         return $userupdate;
