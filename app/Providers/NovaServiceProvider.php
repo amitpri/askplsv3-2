@@ -188,6 +188,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         $loggedintenant = Auth::user()->tenant; 
         $loggedinemail= Auth::user()->email;
         $loggedinrole = Auth::user()->role;
+        $loggedincatsel = Auth::user()->catsel_status;
 
         if( $loggedinrole == "super"){
 
@@ -202,8 +203,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
              //       new \Tightenco\NovaGoogleAnalytics\MostVisitedPagesCard,
   
 
-
-                    
                     
                     ];
 
@@ -215,20 +214,29 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
              //       new TopicCount,
              //       new ReviewCount,  
                     
-                    
                     ];
-            }else{
+            }elseif( $loggedinrole == 'user' ){
 
 
-                return [ 
+                if( $loggedincatsel == 0 ){
 
-                    new \Askpls\Categorysummary\Categorysummary(),
-                    new GroupCount,
-                    new ProfileCount,
-                    new ReviewCount,
-                    new TopicCount, 
-                    
-                ];
+                    return [ 
+
+                        new \Askpls\Categorysummary\Categorysummary(), 
+                        
+                    ];
+
+                }else{
+
+                    return [ 
+ 
+                        new GroupCount,
+                        new ProfileCount,
+                        new ReviewCount,
+                        new TopicCount, 
+                        
+                    ];
+                }
 
             }
         }
