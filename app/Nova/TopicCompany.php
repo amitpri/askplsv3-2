@@ -77,7 +77,7 @@ class TopicCompany extends Resource
                                 'The heading of the review being asked for. Max length 100'
                             ),   
 
-                    BelongsTo::make('CategoryCompany')->rules('required', 'max:100'), 
+                    BelongsTo::make('Category - Company', 'CategoryCompany')->rules('required', 'max:100'), 
 
                     CKEditor::make('Details')->options([
                         'height' => 300,
@@ -157,7 +157,7 @@ class TopicCompany extends Resource
                               'readonly' => true
                         ]]), 
 
-                    BelongsTo::make('Category - Company', 'CategoryCompany')->rules('required', 'max:100')->hideFromIndex(), 
+                    BelongsTo::make('Category - Company', 'CategoryCompany')->rules('required', 'max:100'), 
 
                     CKEditor::make('Details')->options([
                         'height' => 300,
@@ -224,7 +224,7 @@ class TopicCompany extends Resource
                               'readonly' => true
                         ]]), 
 
-                    BelongsTo::make('CategoryCompany')->rules('required', 'max:100')->hideFromIndex(), 
+                    BelongsTo::make('Category - Company', 'CategoryCompany')->rules('required', 'max:100'), 
 
                     CKEditor::make('Details')->options([
                         'height' => 300,
