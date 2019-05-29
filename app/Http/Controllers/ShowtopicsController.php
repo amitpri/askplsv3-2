@@ -11,7 +11,9 @@ use Illuminate\Support\Facades\DB;
  
 use App\User;
 use App\ShowTopic;
+use App\ShowTopicCompany;
 use App\ShowReview;
+use App\ShowReviewCompany;
 
 use App\Mail\PostReview;
 
@@ -64,6 +66,23 @@ class ShowtopicsController extends Controller implements ShouldQueue
         $topic_id = $request->id;
 
         $topics = ShowReview::
+            //    where('published', '=' , 1)->
+           //     where('status', '=' , 1)-> 
+                where('topic_id' , '=' , $topic_id)->
+                orderBy('updated_at','desc')->offset($row_count)->take(10)->
+                get(['id','user_id','topic_name', 'review']);
+
+        return $topics;
+   
+    }
+
+    public function getmorecompanymessages(Request $request)
+    {
+
+        $row_count = $request->row_count;
+        $topic_id = $request->id;
+
+        $topics = ShowReviewCompany::
             //    where('published', '=' , 1)->
            //     where('status', '=' , 1)-> 
                 where('topic_id' , '=' , $topic_id)->
@@ -247,7 +266,29 @@ class ShowtopicsController extends Controller implements ShouldQueue
 
         }
 
-        
+        return $reviews;
+   
+    } 
+
+    public function messagecompanies(Request $request)
+    {   
+        $inpid = $request->id; 
+
+        $topic = ShowTopicCompany::where('id','=',$inpid)->first(['id' , 'reviewdisplay']);
+
+        if( $topic->reviewdisplay == 1 ){
+
+            $reviews = ShowReviewCompany::where('topic_id','=',$inpid)
+                    ->orderBy('updated_at','desc')->take(10)
+                    ->get(['id','topic_name','review','created_at']); 
+
+        }else{
+
+            $reviews = [
+                'error_code' => 0,
+            ];
+
+        }
 
         return $reviews;
    

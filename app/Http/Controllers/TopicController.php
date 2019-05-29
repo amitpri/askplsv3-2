@@ -613,7 +613,7 @@ class TopicController extends Controller
         $id = $topic->id;
         $topic_name = $topic->topic_name;
        
-        return view('showtopic',compact('topics', 'url','id' ,'topic_name'));
+        return view('showtopiccompany',compact('topics', 'url','id' ,'topic_name'));
    
     } 
 
