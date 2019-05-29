@@ -26,10 +26,10 @@ class TopicCompany extends Model
 
     }
 
-    public function review()
+    public function Reviewcompany()
     {
 
-    	return $this->hasMany('App\Review');
+    	return $this->hasMany('App\Reviewcompany', 'topic_id' , 'id');
 
     }
 

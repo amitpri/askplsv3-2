@@ -135,7 +135,7 @@ class TopicCompany extends Resource
 
                     BelongsToMany::make('Group'),
 
-                    HasMany::make('Review'),
+                    HasMany::make('Review Company' , 'Reviewcompany'),
 
                      
                 ];
@@ -214,7 +214,7 @@ class TopicCompany extends Resource
 
                     BelongsToMany::make('Group'),
 
-                    HasMany::make('Review'),
+                    HasMany::make('Review Company' , 'Reviewcompany'),
                 ];
 
             }else{
@@ -287,7 +287,7 @@ class TopicCompany extends Resource
 
                     })->hideWhenUpdating(), 
 
-                    HasMany::make('Review'),
+                    HasMany::make('Review Company' , 'Reviewcompany'),
                 ];
 
             }
