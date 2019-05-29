@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\User;
 use App\ShowTopic;
+use App\ShowTopicCompany;
 use App\Feedback;
 use App\Category;
 use App\ShowCategory;
@@ -587,6 +588,27 @@ class TopicController extends Controller
    
 
         $topic = ShowTopic::where('url','=',$url)->where('type','=','public')->first(['id','url' , 'topic_name']); 
+        
+        $id = $topic->id;
+        $topic_name = $topic->topic_name;
+       
+        return view('showtopic',compact('topics', 'url','id' ,'topic_name'));
+   
+    } 
+
+    public function showcompany($url)
+    {
+  
+        $topics = DB::select("SELECT  a.`id`, a.`url`, a.`user_id`,  a.`topic_name`,  a.`details` 
+                                , a.`image`, a.`video`, b.`name`
+                                    , b.`user_code`,    DATE_FORMAT(a.`created_at`, '%d-%b-%Y') created_at
+                                        FROM `topic_companies` a ,  `users` b 
+                                        WHERE a.`url` = :url
+                                        AND a.`user_id` = b.`id`
+                                        AND a.`type` = 'public' ", ['url' => $url]); 
+ 
+
+        $topic = ShowTopicCompany::where('url','=',$url)->where('type','=','public')->first(['id','url' , 'topic_name']); 
         
         $id = $topic->id;
         $topic_name = $topic->topic_name;

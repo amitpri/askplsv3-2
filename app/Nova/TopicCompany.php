@@ -120,7 +120,7 @@ class TopicCompany extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/ct/' . $this->url;
                         }
 
                     })->hideWhenUpdating(),
@@ -144,7 +144,9 @@ class TopicCompany extends Resource
                     ->options([ 
                         'Public' => 'Public',
                         'Private' => 'Private',
-                    ])->default('Public')->sortable(), 
+                    ])->default('Public')->sortable()->help(
+                                "&nbsp;&nbsp;" . '  Public topics can be shared using its public link. Private topics can be shared with individuals'
+                            ), 
 
                     HiddenField::make('User', 'user_id')->current_user_id()->hideFromIndex()->hideFromDetail(),
 
@@ -176,7 +178,6 @@ class TopicCompany extends Resource
                     AdvancedImage::make('Image')->disk('public')->croppable(1/1)->resize(600,600), 
 
                     Youtube::make('Video'), 
-
                     
                     RadioButton::make('Active', 'status')
                     ->options([ 
@@ -190,7 +191,7 @@ class TopicCompany extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/ct/' . $this->url;
                         }
 
                     })->hideWhenUpdating(), 
@@ -250,7 +251,7 @@ class TopicCompany extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/ct/' . $this->url;
                         }
 
                     })->hideWhenUpdating(), 

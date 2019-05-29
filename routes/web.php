@@ -104,6 +104,7 @@ Route::get('/instagram', 'TopicController@instagram');
 Route::get('/youtube', 'TopicController@youtube'); 
 Route::get('/pictures', 'TopicController@pictures');  
 
+Route::get('/ct/{id}', 'TopicController@showcompany'); 
 
 Route::get('/categorysummary/get','HomeController@categorysummaryget'); 
 Route::get('/categorysummary/post','HomeController@categorysummarypost'); 
