@@ -406,7 +406,7 @@
 
 							if( c == true){
 
-								axios.get('/st/postreview' ,{
+								axios.get('/ct/postreview' ,{
 									params: {
 
 								      		review: this.inpReview,

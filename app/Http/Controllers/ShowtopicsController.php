@@ -342,7 +342,7 @@ class ShowtopicsController extends Controller implements ShouldQueue
         $inptopicname = $request->topicname;
         $inpreview = $request->review;
 
-        $topic = ShowTopicCompany::where('id','=',$inptopicid)->where('topic_name','=',$inptopicname)->first(['id','user_id', 'url' , 'comments']);
+        $topic = ShowTopicCompany::where('id','=',$inptopicid)->where('topic_name','=',$inptopicname)->first(['id','user_id', 'url']);
 
         $topiccomments = $topic->comments; 
 
