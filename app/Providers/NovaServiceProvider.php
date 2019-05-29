@@ -37,6 +37,7 @@ use App\Nova\Job;
 use App\Nova\Tenant;
 use App\Nova\TenantUser;
 use App\Nova\Category;
+use App\Nova\CategoryCompany;
 use App\Nova\ContactForm;
 use App\Nova\Hotel;
 use App\Nova\HotelMember;
@@ -100,6 +101,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     Review::class, 
                     ReviewMember::class,
                     Category::class,
+                    CategoryCompany::class,
                     TopicLog::class,
                     TopicMail::class,
                     Job::class,

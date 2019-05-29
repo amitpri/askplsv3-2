@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "524d69d2225354cec839e1ca0f83fd42",
+    "content-hash": "9234a8df985bd16830318f56239e6204",
     "packages": [
         {
             "name": "alexpgates/horizon-link",
@@ -682,6 +682,47 @@
                 "nova"
             ],
             "time": "2018-11-30T07:51:33+00:00"
+        },
+        {
+            "name": "dillingham/nova-index-textarea",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dillingham/nova-index-textarea.git",
+                "reference": "1f38b4e425cb6e313b4d8a9581cc666ac9e358c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dillingham/nova-index-textarea/zipball/1f38b4e425cb6e313b4d8a9581cc666ac9e358c7",
+                "reference": "1f38b4e425cb6e313b4d8a9581cc666ac9e358c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dillingham\\NovaTextarea\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dillingham\\NovaTextarea\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Extends Nova textarea for index view",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-02-06T17:38:43+00:00"
         },
         {
             "name": "dniccum/custom-email-sender",

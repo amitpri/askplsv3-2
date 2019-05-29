@@ -12,12 +12,15 @@
         "alexpgates/horizon-link": "^0.0.3",
         "algolia/algoliasearch-client-php": "1.27",
         "anhskohbo/no-captcha": "^3.0",
+        "askpls/Categorysummary": "*",
+        "askpls/category": "*",
         "askpls/payments": "*",
         "askpls/work": "*",
         "askpls/workspacesummary": "*",
         "chaseconey/nova-external-image": "^0.0.3",
         "christophrumpel/nova-notifications": "^1.0",
         "ctessier/nova-advanced-image-field": "^0.1.1",
+        "dillingham/nova-index-textarea": "^1.0",
         "dniccum/custom-email-sender": "^1.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
@@ -42,9 +45,7 @@
         "spatie/laravel-analytics": "^3.6",
         "spatie/nova-tags-field": "^1.1",
         "tightenco/nova-google-analytics": "^0.1.4",
-        "waynestate/nova-ckeditor4-field": "^0.1.4",
-        "askpls/category": "*",
-        "askpls/Categorysummary": "*"
+        "waynestate/nova-ckeditor4-field": "^0.1.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

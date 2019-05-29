@@ -40,10 +40,10 @@ class TopicCompany extends Model
 
     }    
 
-    public function category()
+    public function categorycompany()
     {
 
-        return $this->belongsTo('App\Category', 'category_id');
+        return $this->belongsTo('App\CategoryCompany', 'category_id');
 
     }  
 
