@@ -104,6 +104,14 @@ class TopicCompany extends Resource
                                 "<br><br><i>" . 'Sharable and option to display at askpls.com portal for others to view and review'  ."<i>"
                             )->hideFromIndex()->hideFromDetail(), 
 
+                    RadioButton::make('Review Viewable', 'reviewdisplay')
+                    ->options([ 
+                        '0' => 'No',
+                        '1' => 'Yes',
+                    ])->sortable()->default('1')->hideFromIndex()->help(
+                                "<br><br><i>" . 'Review Viewable by others at AskPls Portal'  ."<i>"
+                            ),  
+
                     RadioButton::make('Active', 'status')
                     ->options([ 
                         '0' => 'No',
@@ -179,6 +187,14 @@ class TopicCompany extends Resource
 
                     Youtube::make('Video'), 
                     
+                    RadioButton::make('Review Viewable', 'reviewdisplay')
+                    ->options([ 
+                        '0' => 'No',
+                        '1' => 'Yes',
+                    ])->sortable()->default('1')->hideFromIndex()->help(
+                                "<br><br><i>" . 'Review Viewable by others at AskPls Portal'  ."<i>"
+                            ),  
+
                     RadioButton::make('Active', 'status')
                     ->options([ 
                         '0' => 'No',
@@ -244,6 +260,21 @@ class TopicCompany extends Resource
                     AdvancedImage::make('Image')->disk('public')->croppable(1/1)->resize(600,600),
 
                     Youtube::make('Video'), 
+
+                     RadioButton::make('Review Viewable', 'reviewdisplay')
+                    ->options([ 
+                        '0' => 'No',
+                        '1' => 'Yes',
+                    ])->sortable()->default('1')->hideFromIndex()->help(
+                                "<br><br><i>" . 'Review Viewable by others at AskPls Portal'  ."<i>"
+                            ),  
+
+                    RadioButton::make('Active', 'status')
+                    ->options([ 
+                        '0' => 'No',
+                        '1' => 'Yes',
+                    ])->sortable()->default('1'), 
+
  
                     HiddenField::make( 'url')->default(mt_rand(100000000, 999999999))->hideFromIndex()->hideFromDetail()->hideWhenUpdating(),
           
