@@ -16,6 +16,7 @@ use App\ShowReview;
 use App\ShowReviewCompany;
 
 use App\Mail\PostReview;
+use App\Mail\PostReviewCompany;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
@@ -364,7 +365,7 @@ class ShowtopicsController extends Controller implements ShouldQueue
         $name = $userdetails->name;
  
         
-        \Mail::to($emailid)->queue(new PostReview($url,$inptopicname,$name));
+        \Mail::to($emailid)->queue(new PostReviewCompany($url,$inptopicname,$name));
 
 
         return $postfeedback;
