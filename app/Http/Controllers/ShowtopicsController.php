@@ -326,20 +326,43 @@ class ShowtopicsController extends Controller implements ShouldQueue
 
         $emailid = $userdetails->email;
         $name = $userdetails->name;
+ 
+        
+        \Mail::to($emailid)->queue(new PostReview($url,$inptopicname,$name));
 
 
-//        $publishdata = [
+        return $postfeedback;
+   
+    } 
 
-//            'event' => "NewFeedback_$userid",
-//            'data' => [
-//                'topic_id' => $inptopicid,
-//                'topic' => $inptopicname,
- //               'review' => $inpreview,
-//            ]
-            
- //       ]; 
+    public function postcompanyreview(Request $request)
+    {   
 
-//        Redis::publish('channel_feedback',json_encode($publishdata));
+        $inptopicid = $request->topicid;
+        $inptopicname = $request->topicname;
+        $inpreview = $request->review;
+
+        $topic = ShowTopicCompany::where('id','=',$inptopicid)->where('topic_name','=',$inptopicname)->first(['id','user_id', 'url' , 'comments']);
+
+        $topiccomments = $topic->comments; 
+
+        $userid = $topic->user_id;
+        $url = $topic->url;
+
+        $postfeedback = ShowReviewCompany::create(
+                [   
+                    'user_id' => $userid,
+                    'topic_id' => $inptopicid,
+                    'topic_name' => $inptopicname,
+                    'review' => $inpreview,                             
+                ]);
+
+
+        $userdetails = User::where('id','=',$userid)->first(['id','email','name']);
+
+        $emailid = $userdetails->email;
+        $name = $userdetails->name;
+ 
         
         \Mail::to($emailid)->queue(new PostReview($url,$inptopicname,$name));
 

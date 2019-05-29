@@ -358,7 +358,7 @@
  
 	                moremessages:function(){
 
-	                    axios.get('/st/getmoremessages' ,{
+	                    axios.get('/ct/getmoremessages' ,{
 
 	                            params: {
 	                              row_count: this.row_count,

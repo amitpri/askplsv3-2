@@ -61,6 +61,7 @@ Route::get('/st/filteredinstagram', 'ShowtopicsController@filteredinstagram');
 Route::get('/st/messages', 'ShowtopicsController@messages');
 Route::get('/ct/messages', 'ShowtopicsController@messagecompanies');
 Route::get('/st/postreview', 'ShowtopicsController@postreview'); 
+Route::get('/ct/postreview', 'ShowtopicsController@postcompanyreview'); 
 Route::get('/st/showdetails', 'ShowtopicsController@showdetails'); 
 Route::get('/st/{id}', 'ShowtopicsController@show');
 Route::get('/p/details', 'ShowtopicsController@viewprofiledetails');
