@@ -157,7 +157,7 @@ class TopicCompany extends Resource
                               'readonly' => true
                         ]]), 
 
-                    BelongsTo::make('CategoryCompany')->rules('required', 'max:100')->hideFromIndex(), 
+                    BelongsTo::make('Category', 'CategoryCompany')->rules('required', 'max:100')->hideFromIndex(), 
 
                     CKEditor::make('Details')->options([
                         'height' => 300,
