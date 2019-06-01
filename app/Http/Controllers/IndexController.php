@@ -37,6 +37,12 @@ class IndexController extends Controller
 
     }
 
+    public function solutioncompany()
+    {
+
+        return view('solutioncompany');
+    }
+
     public function why()
     {
  

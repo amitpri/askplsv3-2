@@ -30,6 +30,7 @@ Route::get('/companies', 'TopicController@companies');
 Route::get('/lawyers', 'TopicController@lawyers');
 Route::get('/fitnesscenters', 'TopicController@fitnesscenters');
 Route::get('/about', 'IndexController@about');
+Route::get('/s/company', 'IndexController@solutioncompany');
 Route::get('/solutions', 'IndexController@solutions'); 
 Route::get('/why', 'IndexController@why');
 Route::get('/product', 'IndexController@product'); 
