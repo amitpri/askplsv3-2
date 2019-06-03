@@ -2,8 +2,7 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 
 	<!-- Stylesheets
 	============================================= -->
@@ -18,8 +17,7 @@
 
 	<link rel="stylesheet" href="/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- Workspace Demo Specific Stylesheet -->
+ 
 	<link rel="stylesheet" href="/css/colors.php?color=267DF4" type="text/css" /> <!-- Theme Color -->
 	<link rel="stylesheet" href="/demos/coworking/css/fonts.css" type="text/css" /> <!-- Theme Font -->
 	<link rel="stylesheet" href="/demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
@@ -27,7 +25,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Coworking | Canvas</title>
+	<title>AskPls | Companies </title>
 
 </head>
 
@@ -203,8 +201,8 @@
 									<div class="fbox-icon">
 										<i class="icon-line-circle-check"></i>
 									</div>
-									<h3 class="text-white">24x7 Access.</h3>
-									<p class="text-white mb-0">Get Started with our Regular, Weekly, Monthly Plan.</p>
+									<h3 class="text-white">Affordable pricing.</h3>
+									<p class="text-white mb-0">Pricing based at number of employees</p>
 								</div>
 							</div>
 
@@ -214,7 +212,7 @@
 										<i class="icon-line-circle-check"></i>
 									</div>
 									<h3 class="text-white">Secured &amp; Friendly.</h3>
-									<p class="text-white mb-0">Intrinsicly evisculate quality vectors befor high-impact schemas.</p>
+									<p class="text-white mb-0">Very simple to use and focused on the exact needs.</p>
 								</div>
 							</div>
 						</div>
@@ -226,45 +224,45 @@
 						<div class="row align-items-md-center mb-5">
 							<div class="col-md-6 pr-5">
 								<div class="heading-block mb-4 nobottomborder">
-									<div class="before-heading">Know More</div>
-									<h2 class="nott t600">Work Together, Build Together.</h2>
+									<div class="before-heading"><a href="">Know More</a></div>
+									<h2 class="nott t600">Genuine Reviews for growing stronger</h2>
 								</div>
 								<div class="row">
 									<div class="col-6 col-sm-6 mb-4">
-										<div class="counter color t600"><span data-from="1" data-to="3" data-refresh-interval="2" data-speed="600"></span>+</div>
-										<h5 class="mt-0 t500">Branches</h5>
+										<div class="counter color t600"><span data-from="1" data-to="125" data-refresh-interval="2" data-speed="600"></span>+</div>
+										<h5 class="mt-0 t500">Companies</h5>
 									</div>
 
 									<div class="col-6 col-sm-6 mb-4">
-										<div class="counter color t600"><span data-from="1" data-to="37" data-refresh-interval="11" data-speed="900"></span>+</div>
-										<h5 class="mt-0 t500">Single Studios</h5>
+										<div class="counter color t600"><span data-from="1" data-to="10000" data-refresh-interval="11" data-speed="900"></span>+</div>
+										<h5 class="mt-0 t500">User Profiles</h5>
 									</div>
 
 									<div class="col-6 col-sm-6 mb-4">
-										<div class="counter color t600"><span data-from="1" data-to="21" data-refresh-interval="3" data-speed="1000"></span>+</div>
-										<h5 class="mt-0 t500">Events per Month</h5>
+										<div class="counter color t600"><span data-from="1" data-to="1000" data-refresh-interval="3" data-speed="1000"></span>+</div>
+										<h5 class="mt-0 t500">Topics per Month</h5>
 									</div>
 
 									<div class="col-6 col-sm-6 mb-4">
-										<div class="counter color t600"><span data-from="100" data-to="4500" data-refresh-interval="100" data-speed="1500"></span>+</div>
-										<h5 class="mt-0 t500">Active Members</h5>
+										<div class="counter color t600"><span data-from="100" data-to="10000" data-refresh-interval="100" data-speed="1500"></span>+</div>
+										<h5 class="mt-0 t500">Reviews</h5>
 									</div>
 								</div>
-								<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda praesentium eius, similique reprehenderit ab voluptatibus eaque.</p>
+								<p class="text-muted">Getting genuine feedbacks for any subject either for a simple things or for a complex process helps you understands the impact on the employees and take corrective measures.  </p>
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="card shadow-sm border-light">
 									<img src="/demos/coworking/images/features/3.jpg" alt="Featured image 1" class="card-img-top">
 									<div class="card-body">
-										<h5 class="card-title t600 color">Meeting Rooms</h5>
-										<p class="card-text">Some quick example text to build on the card title.</p>
+										<h5 class="card-title t600 color">Public Topics</h5>
+										<p class="card-text">Publicly sharable topics for reviews from anywhere.</p>
 									</div>
 								</div>
 								<div class="card shadow-sm border-light mt-4">
 									<img src="/demos/coworking/images/features/2.jpg" alt="Featured image 2" class="card-img-top">
 									<div class="card-body">
-										<h5 class="card-title t600 color">Private Rooms</h5>
-										<p class="card-text">Some quick example text. similique reprehenderit ab voluptatibus eaque.</p>
+										<h5 class="card-title t600 color">Private Topics</h5>
+										<p class="card-text">Privately sharable topics for specific topics for indvidual or groups.</p>
 									</div>
 								</div>
 							</div>
@@ -272,7 +270,7 @@
 								<div class="card shadow-sm border-light">
 									<img src="/demos/coworking/images/features/1.jpg" alt="Featured image 3" class="card-img-top">
 									<div class="card-body">
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<p class="card-text">Manage profiles and groups and understands the different viewpoints</p>
 									</div>
 								</div>
 							</div>
@@ -288,73 +286,51 @@
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-wifi-full color ml-0 mb-4 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Fiber Optic WiFi</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">Profile Management</h4>
+							<p class="text-muted">Create employees profiles or upload all together easily for your entire database.</p>
 						</div>
 
 						<!-- Feature Box
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-line2-cup color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Cafeteria</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">Group Management</h4>
+							<p class="text-muted">Create multiple groups quickly and add profiles who needs to be reviewing the topics</p>
 						</div>
 
 						<!-- Feature Box
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-line2-screen-desktop color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Flexible Desks</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">Multiple type of Topics</h4>
+							<p class="text-muted">Create Private or Public Topics. Upload pictures and videos as well.</p>
 						</div>
 
 						<!-- Feature Box
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-line2-lock color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Lockers</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">Topics dispatch</h4>
+							<p class="text-muted">Send topic to the target group or profiles and track the delivery. Or you can also share that of your own for public topics.</p>
 						</div>
 
 						<!-- Feature Box
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-fingerprint color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">100% Secure</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">Reviews</h4>
+							<p class="text-muted">Control if the reviews can be seen publicly or only by you. Check reviews per topics in real time and export the data for further analysis.</p>
 						</div>
 
 						<!-- Feature Box
 						============================================= -->
 						<div class="col-lg-4 col-md-6 my-4">
 							<i class="icon-line2-printer color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Printers &amp; Fax</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<h4 class="mb-3">100% Secure</h4>
+							<p class="text-muted">Your reviews and topics are non sharable</p>
 						</div>
 
-						<!-- Feature Box
-						============================================= -->
-						<div class="col-lg-4 col-md-6 my-4">
-							<i class="icon-couch color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Common Area</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
-						</div>
-
-						<!-- Feature Box
-						============================================= -->
-						<div class="col-lg-4 col-md-6 my-4">
-							<i class="icon-line-clock color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">24x7 Access</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
-						</div>
-
-						<!-- Feature Box
-						============================================= -->
-						<div class="col-lg-4 col-md-6 my-4">
-							<i class="icon-playstation color ml-0 mb-3 i-plain d-block fnone"></i>
-							<h4 class="mb-3">Other Activities</h4>
-							<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
-						</div>
+						 
 					</div>
 				</div>
 
