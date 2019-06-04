@@ -2,33 +2,31 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="AskPls" />
 
-	<!-- Stylesheets
-	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="/style.css" type="text/css" />
-	<link rel="stylesheet" href="/css/dark.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Playfair+Display:700,700i,900" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/bootstrap_mini.css" type="text/css" />
+    <link rel="stylesheet" href="/style_mini.css" type="text/css" />  
+    <link rel="stylesheet" href="/askpls.css" type="text/css" />
 
-	<link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
-
-	<link rel="stylesheet" href="/css/responsive.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/css/animate.css" type="text/css" /> 
  
-	<link rel="stylesheet" href="/css/colors.php?color=267DF4" type="text/css" /> <!-- Theme Color -->
-	<link rel="stylesheet" href="/demos/coworking/css/fonts.css" type="text/css" /> <!-- Theme Font -->
-	<link rel="stylesheet" href="/demos/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
-	<!-- / -->
+    <link rel="stylesheet" href="/askplsfonts.css" type="text/css" />
 
-	<!-- Document Title
-	============================================= -->
-	<title>AskPls | Companies </title>
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/colors.php?color=1c85e8" type="text/css" /> 
+
+    <script async src="embed.js"></script>  
+ 
+
+    @include('analytics')
+ 
+    <title>AskPls | Anonymous Review Platform</title>
 
 </head>
-
 <body class="stretched side-push-panel">
 
 	<div id="side-panel">
@@ -191,8 +189,8 @@
 									<div class="fbox-icon">
 										<i class="icon-line-circle-check"></i>
 									</div>
-									<h3 class="text-white">Easily Manage the Topics of interests</h3>
-									<p class="text-white mb-0">Centralized and easy. Available only what is needed and nothing more.</p>
+									<h3 class="text-white">Easily Manage the Contents</h3>
+									<p class="text-white mb-0">Centralized and easy.</p>
 								</div>
 							</div>
 
@@ -446,182 +444,10 @@
 									</div>
 
 								</div>
-							</div>
-							<div class="col-md-11 mt-5 offset-md-1">
-								<h3>Terms &amp; Conditions</h3>
-								<ul class="pl-4 mb-0">
-									<li class="mb-1">Hours indicated are access to the space NOT the WIFI or Internet Connection.</li>
-									<li class="mb-1">Payment is upfront. We accept Cash and VISA/Master Cards, 2% Credit Card surcharge applies.</li>
-									<li class="mb-1">Monthly Plan starts from the point of signup for 30 days.</li>
-									<li class="mb-1">Sorry NO Pausing Memberships and NO Cancellations.</li>
-									<li class="mb-1">Sorry NO Upgrading Plans you need to use the hours in the plan.</li>
-									<li class="mb-1">If you run out of hours you can buy additional hours at the rate above, through our website or front desk.</li>
-									<li class="mb-1">If you wish to change plan once you’re on a plan this is done only at the end of the month or once you use your hours.</li>
-									<li class="mb-1">Additional Printing is charged at &dollar;0.30 for Black and White A4 & A3 and &dollar;2 for Colour A4 & A3.</li>
-									<li class="mb-1">Skype Booths must be booked before 1 day &amp; the keys can be collected at the frontdesk. Additional Skype Booth usage will be charged at &dollar;5 per hour.</li>
-									<li class="mb-1">Storage Lockers are first come first serve and are subject to availability.</li>
-									<li class="mb-1">Additional Charge for Mail Delivery.</li>
-									<li class="mb-1">Pets are not allowed.</li>
-								</ul>
-							</div>
+							</div> 
 						</div>
 					</div>
-				</div>
-
-				<div class="section clearfix nobg">
-					<div class="container">
-						<div class="heading-block nobottomborder center">
-							<div class="before-heading">Some Of Gallery Pictures</div>
-							<h2 class="nott t600 mb-0">Gallery</h2>
-						</div>
-					</div>
-					<div id="image-carousel" class="owl-carousel carousel-widget" data-margin="24" data-nav="true" data-pagi="true" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="2" data-items-xl="2" style="padding: 0 20px" data-lightbox="gallery">
-						<div class="slide slide--1">
-							<div class="carousel-column-container">
-								<ul class="carousel-column column-1">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/1.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/1.jpg');"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/2.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/2.jpg');"></a>
-									</li>
-								</ul>
-								<ul class="carousel-column column-2">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/3.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/3.jpg'); min-height: 300px"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/4.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/4.jpg'); min-height: 280px"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/5.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/5.jpg'); min-height: 200px"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="slide slide--2">
-							<div class="carousel-column-container">
-								<ul class="carousel-column column-1">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/6.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/6.jpg'); min-height: 324px"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<div class="item bgcolor d-flex align-items-center px-4" style="min-height: 480px">
-											<blockquote class="blockquote border-0 mb-0">
-												<p class="mb-3 text-white">"The Spirit of CoWorking Allows You to Find CoWorkers Who're Worth Working with."</p>
-												<footer class="blockquote-footer text-white-50 font-italic">Cynthia Chiam</footer>
-											</blockquote>
-										</div>
-									</li>
-								</ul>
-								<ul class="carousel-column column-2">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/8.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/8.jpg');"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/9.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/9.jpg');"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/10.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/10.jpg');"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="slide slide--3">
-							<div class="carousel-column-container">
-								<ul class="carousel-column column-1">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/11.jpg" data-lightbox="gallery-item" class="item bgcolor d-flex align-items-center px-4 img-overlay" style="background-image: url('/demos/coworking/images/gallery/11.jpg'); min-height: 350px">
-											<blockquote class="blockquote border-0 mb-0">
-												<p class="mb-3 text-white">"I Belive in Collaboration Rather Than Competition"</p>
-												<footer class="blockquote-footer text-white-50 font-italic">Cynthia Chiam</footer>
-											</blockquote>
-										</a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/12.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/12.jpg'); min-height: 453px"></a>
-									</li>
-								</ul>
-								<ul class="carousel-column column-2">
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/13.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/13.jpg');"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/14.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/14.jpg');"></a>
-									</li>
-									<li class="carousel-grid-item">
-										<a href="/demos/coworking/images/gallery/15.jpg" data-lightbox="gallery-item" class="item" style="background-image: url('/demos/coworking/images/gallery/15.jpg');"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="section p-0 testimonials clearfix">
-					<div class="container" style="padding: 120px 0">
-						<div class="heading-block nobottomborder center">
-							<div class="before-heading">What our Members Say</div>
-							<h2 class="nott t600">Testimonials</h2>
-							<p class="mb-0 mt-1"><span class="t600">Excellent, 9.6</span> out of 10 based on <span class="t600">2,118</span> reviews. </p>
-						</div>
-
-						<div id="testimonials-carousel" class="owl-carousel carousel-widget testimonial testimonial-full nobgcolor noborder noshadow nopadding divcenter tleft clearfix" data-animate-in="fadeIn" data-animate-out="fadeOut" data-margin="24" data-nav="false" data-pagi="true" data-items="1" style="max-width: 740px">
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-									</div>
-									<p>Collaboratively enhance intermandated innovation via cutting-edge core competencies. Professionally extend covalent e-markets and mission-critical communities. Dramatically communicate revolutionary web services for interactive synergy. Synergistically.</p>
-									<div class="testi-meta mt-4">
-										Steve Jobs
-										<span class="ls0">Apple Inc.</span>
-									</div>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star-half2"></i>
-									</div>
-									<p>Intrinsicly synergize excellent content whereas user friendly action items. Rapidiously transition multimedia based information after top-line alignments. Authoritatively integrate accurate outsourcing vis-a-vis principle-centered systems energistically</p>
-									<div class="testi-meta mt-4">
-										Collis Ta'eed
-										<span class="ls0">Envato Inc.</span>
-									</div>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="testi-content">
-									<div class="testi-stars mb-4">
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-										<i class="icon-star3"></i>
-									</div>
-									<p>Compellingly engage multimedia based niche markets via value-added manufactured products. Competently formulate goal-oriented content for installed base users. Uniquely leverage other's granular ROI without 24/365 collaboration and idea-sharing.</p>
-									<div class="testi-meta mt-4">
-										John Doe
-										<span class="ls0">XYZ Inc.</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+				</div>  
 				<div class="section nobg clearfix" style="padding: 80px 0">
 					<div class="container">
 						<div class="row justify-content-between align-items-center">
@@ -669,209 +495,7 @@
 				</div>
 
 				<div class="line"></div>
-
-				<div class="section p-0 nobg clearfix">
-					<div class="container">
-						<div class="row mb-2">
-							<div class="col-lg-6 col-md-4">
-								<div class="heading-block nobottomborder mb-4">
-									<div class="before-heading">How do you Contact Us</div>
-									<h2 class="nott t600">Locations</h2>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-md-8">
-								<div class="row">
-									<div class="col-sm-4 col-3">
-										<div class="counter color t600"><span data-from="1" data-to="3" data-refresh-interval="2" data-speed="600"></span>+</div>
-										<h5 class="mt-0 t500">Branches</h5>
-									</div>
-
-									<div class="col-sm-4 col-6">
-										<div class="counter color t600"><span data-from="100" data-to="4500" data-refresh-interval="100" data-speed="1500"></span>+</div>
-											<h5 class="mt-0 t500">Active Members</h5>
-									</div>
-
-									<div class="col-sm-4 col-3">
-										<div class="counter color t600"><span data-from="2" data-to="100" data-refresh-interval="30" data-speed="1500"></span>%</div>
-											<h5 class="mt-0 t500">Secured</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="locations-carousel" class="owl-carousel carousel-widget owl-carousel-full clearfix" data-animate-in="fadeIn" data-animate-out="fadeOut" data-speed="200" data-margin="0" data-nav="true" data-pagi="true" data-items="1">
-						<div>
-							<div class="masonry-thumbs grid-5" data-big="2" data-lightbox="gallery">
-								<a href="/demos/coworking/images/location/thumbs/full/1.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/1.jpg" alt="Gallery Thumb 1"></a>
-								<a href="#"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253572242!2d144.95373531531297!3d-37.817327679751735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1554124945593!5m2!1sen!2sin" width="500" height="334" allowfullscreen  style="border:0;"></iframe></a>
-								<a href="/demos/coworking/images/location/thumbs/full/2.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/2.jpg" alt="Gallery Thumb 12"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/3.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/3.jpg" alt="Gallery Thumb 3"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/4.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/4.jpg" alt="Gallery Thumb 4"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/5.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/5.jpg" alt="Gallery Thumb 5"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/6.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/6.jpg" alt="Gallery Thumb 6"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/7.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/7.jpg" alt="Gallery Thumb 7"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/8.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/8.jpg" alt="Gallery Thumb 13"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/9.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/9.jpg" alt="Gallery Thumb 6"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/10.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/10.jpg" alt="Gallery Thumb 7"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/11.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/11.jpg" alt="Gallery Thumb 12"></a>
-							</div>
-							<div class="container">
-								<div class="card shadow bg-white">
-									<div class="card-body">
-										<h3 class="mb-4">Melbourne</h3>
-										<div style="font-size: 16px;">
-											<address>
-												121 King St,<br>Melbourne VIC 3000,<br>Australia
-											</address>
-											<div class="mb-4" style="font-size: 15px;">
-												<small class="text-black-50 d-block mb-2">Phone Number:</small>
-												<a href="tel:+(61)3-222-333-44" class="text-dark d-block mb-1">+(61)3-222-333-44</a>
-												<a href="tel:+(61)3-234-532-45" class="text-dark">+(61)3-234-532-45</a>
-											</div>
-
-											<a href="#" class="button button-rounded m-0 nott t600 ls0">Email Us</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="masonry-thumbs grid-5" data-big="1,6" data-lightbox="gallery">
-								<a href="#"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253572242!2d144.95373531531297!3d-37.817327679751735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1554124945593!5m2!1sen!2sin" width="500" height="334" allowfullscreen  style="border:0;"></iframe></a>
-								<a href="/demos/coworking/images/location/thumbs/full/5.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/5.jpg" alt="Gallery Thumb 5"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/2.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/2.jpg" alt="Gallery Thumb 12"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/4.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/4.jpg" alt="Gallery Thumb 4"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/1.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/1.jpg" alt="Gallery Thumb 1"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/9.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/9.jpg" alt="Gallery Thumb 6"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/3.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/3.jpg" alt="Gallery Thumb 3"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/6.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/6.jpg" alt="Gallery Thumb 6"></a>
-								<a href="/demos/coworking/images/location/thumbs/full/7.jpg" data-lightbox="gallery-item"><img src="/demos/coworking/images/location/thumbs/7.jpg" alt="Gallery Thumb 7"></a>
-							</div>
-							<div class="container">
-								<div class="card shadow bg-white">
-									<div class="card-body">
-										<h3 class="mb-4">Sydney</h3>
-										<div style="font-size: 16px;">
-											<address>
-												Bennelong Point,<br>Sydney NSW 2000,<br>Australia.
-											</address>
-											<div class="mb-4" style="font-size: 15px;">
-												<small class="text-black-50 d-block mb-2">Phone Number:</small>
-												<a href="tel:+(61)2-222-333-44" class="text-dark d-block mb-1">+(61)2-222-333-44</a>
-												<a href="tel:+(61)2-234-532-45" class="text-dark">+(61)2-234-532-45</a>
-											</div>
-
-											<a href="#" class="button button-rounded m-0 nott t600 ls0">Email Us</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<img src="/demos/coworking/images/location/perth.jpg" alt="Perth">
-							<div class="container">
-								<div class="card shadow bg-white">
-									<div class="card-body">
-										<h3 class="mb-4">Perth</h3>
-										<div style="font-size: 16px;">
-											<address>
-												Fraser Ave,<br>Perth WA 6005,<br>Australia
-											</address>
-											<div class="mb-4" style="font-size: 15px;">
-												<small class="text-black-50 d-block mb-2">Phone Number:</small>
-												<a href="tel:+(61)8-222-333-44" class="text-dark d-block mb-1">+(61)8-222-333-44</a>
-												<a href="tel:+(61)8-234-532-45" class="text-dark">+(61)8-234-532-45</a>
-											</div>
-
-											<div class="d-flex">
-												<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54159.94533455547!2d115.81934154447853!3d-31.96098939372422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a525098d1f2f%3A0xec4a7b90626730e7!2sKings+Park+and+Botanic+Garden!5e0!3m2!1sen!2sin!4v1554279269646!5m2!1sen!2sin" data-lightbox="iframe" class="button button-rounded button-border m-0 nott t500 ls0">View Map</a>
-											<a href="#" class="button button-rounded m-0 nott t600 ls0 ml-2">Email Us</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section nobg clearfix">
-					<div class="container">
-						<div class="heading-block nobottomborder center">
-							<div class="before-heading">See What's Up in Latest</div>
-							<h2 class="nott t600">News &amp; Events</h2>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="row mb-5">
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">A Meetup for People Currently Running an e-Commerce Business</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Synergistically expedite focused experiences through orthogonal "outside the box" thinking. Collaboratively reconceptualize e-commerce via effective applications. Enthusiastically conceptualize go forward functionalities vis-a-vis sticky partnerships. Distinctively underwhelm premier scenarios without synergistic best practices. Globally target cross-platform.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="/demos/articles/images/authors/1.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">Creating Your Own Demand as a Digital Nomad</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Pellentesque hic illo beatae rhoncus sint, quis, fugiat imperdiet unde architecto magna dui hymenaeos autem lorem eligendi.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="/demos/articles/images/authors/2.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-md-4 mt-5">
-								<article class="ipost">
-									<div class="entry-title">
-										<h3><a href="#">Succeeding Remotely Within A Stateside Team</a></h3>
-									</div>
-									<div class="entry-content clearfix">
-										<p>Pellentesque hic illo beatae rhoncus sint, quis, fugiat imperdiet unde architecto magna dui hymenaeos autem lorem eligendi.</p>
-									</div>
-									<div class="author-meta d-flex align-items-center">
-										<div class="author-image">
-											<img src="/demos/articles/images/authors/3.jpg" alt="Author Image" class="rounded-circle">
-										</div>
-										<ul class="entry-meta m-0 clearfix">
-											<li><span>By</span> <a href="#">Hanson Deck</a></li>
-											<li class="mb-0"><a href="#">Mar 11, 2016</a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
+  
 
 				<div class="section mb-0 pb-0 bg-theme-light clearfix" style="padding-top: 120px;">
 					<div class="container">
@@ -884,7 +508,7 @@
 							</div>
 						</div>
 					</div>
-					<img src="/demos/coworking/images/footer-bg.jpg" alt="Footer Image" class="footer-img">
+					 
 				</div>
 
 			</div>
@@ -895,116 +519,7 @@
 		============================================= -->
 		<footer id="footer" class="noborder" style="background-color: #155BBC; padding-top: 80px">
 
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap dark pb-5 clearfix">
-
-					<div class="row">
-
-						<div class="col-lg-2 col-md-2 col-6">
-							<div class="widget clearfix">
-
-								<h4 class="ls0 mb-4 nott text-white">Features</h4>
-
-								<ul class="list-unstyled ml-0">
-									<li class="mb-2"><a href="#">Help Center</a></li>
-									<li class="mb-2"><a href="#">Paid with Moblie</a></li>
-									<li class="mb-2"><a href="#">Status</a></li>
-									<li class="mb-2"><a href="#">Contact Support</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6">
-							<div class="widget clearfix">
-
-								<h4 class="ls0 mb-4 nott text-white">Support</h4>
-
-								<ul class="list-unstyled ml-0">
-									<li class="mb-2"><a href="#">Home</a></li>
-									<li class="mb-2"><a href="#">About</a></li>
-									<li class="mb-2"><a href="#">FAQs</a></li>
-									<li class="mb-2"><a href="#">Support</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6">
-							<div class="widget clearfix">
-
-								<h4 class="ls0 mb-4 nott text-white">Trending</h4>
-
-								<ul class="list-unstyled ml-0">
-									<li class="mb-2"><a href="#">Shop</a></li>
-									<li class="mb-2"><a href="#">Portfolio</a></li>
-									<li class="mb-2"><a href="#">Blog</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6">
-							<div class="widget clearfix">
-
-								<h4 class="ls0 mb-4 nott text-white">Get to Know us</h4>
-
-								<ul class="list-unstyled ml-0">
-									<li class="mb-2"><a href="#">Corporate</a></li>
-									<li class="mb-2"><a href="#">Agency</a></li>
-									<li class="mb-2"><a href="#">eCommerce</a></li>
-									<li class="mb-2"><a href="#">Personal</a></li>
-								</ul>
-
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-4">
-							<div id="instagram" class="widget clearfix">
-
-								<h4 class="ls0 mb-4 nott text-white">Instagram Photos</h4>
-								<div id="instagram-photos" class="instagram-photos masonry-thumbs grid-5" data-user="5834720953" data-count="15" data-type="user"></div>
-
-							</div>
-						</div>
-
-						<div class="line"></div>
-
-						<div class="row">
-							<div class="col-sm-3">
-								<a href="index.html"><img src="/demos/coworking/images/logo-footer.png" alt="Logo Footer" class="mb-4" height="20"></a>
-								<p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<a href="#" class="social-icon si-small si-light si-facebook" title="Facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-								<a href="#" class="social-icon si-small si-light si-twitter" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-								<a href="#" class="social-icon si-small si-light si-github" title="Github">
-									<i class="icon-github"></i>
-									<i class="icon-github"></i>
-								</a>
-								<a href="#" class="social-icon si-small si-light si-instagram" title="instagram">
-									<i class="icon-instagram"></i>
-									<i class="icon-instagram"></i>
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<ul class="list-numbers">
-									<li class="text-white-50 t300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatum corporis, repellat assumenda, cumque labore nam fuga deserunt harum, magni asperiores iure? Quos nobis molestiae dolorum obcaecati ad omnis, sint.</li>
-									<li class="text-white-50 t300 mb-0">Completely embrace real-time systems whereas fully tested schemas. Synergistically actualize state of the art functionalities vis-a-vis cross-platform data. Conveniently reinvent web-enabled bandwidth via cost effective e-tailers. Proactively engage compelling outsourcing after virtual synergy. Distinctively formulate granular.
-									</li>
-								</ul>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
+	 
 
 			<!-- Copyrights
 			============================================= -->
