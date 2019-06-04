@@ -167,9 +167,13 @@
                                 <ul> 
                                     <li><a href="/"><div>Home</div></a></li> 
                                     <li><a href="/topics"><div>Topics</div></a></li> 
-                                    <li><a href="/about"><div>About AskPls</div></a></li> 
+                                    <li><a href="#"><div>Solutions</div></a>
+                                        <ul>
+                                            <li><a href="/s/company"><div>Company Solution</div></a></li>  
+                                        </ul>
+                                    </li> 
                                     <li><a href="/prices"><div>Prices</div></a></li> 
-                                    <li><a href="/support"><div>Support</div></a></li>
+                                    <li><a href="/support"><div>Support</div></a></li> 
                                 </ul>
                             </nav> 
                         </div>
