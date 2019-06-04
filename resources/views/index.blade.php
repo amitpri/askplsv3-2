@@ -168,7 +168,7 @@
 
         </section>
 
-        <section id="content" style="margin-top:-180px;">
+        <section id="content" style="margin-top:-150px;">
 
             <div class="content-wrap notoppadding clearfix">
  
@@ -251,7 +251,123 @@
 
                 </div> 
 
-                <div class="container clearfix">
+                <div class="container">
+                    
+                    <div class="section mt-5 mb-0" style="padding: 120px 0; background-image: url('images/icon-pattern-bg.jpg'); background-size: auto; background-repeat: repeat">
+
+                        <!-- Wave Shape
+                        ============================================= -->
+                        <div class="wave-top" style="position: absolute; top: 0; left: 0; width: 100%; background-image: url('images/wave-3.svg'); height: 12px; z-index: 2; background-repeat: repeat-x;"></div>
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-8">
+                                    <div class="row dark clearfix">
+
+                                        <!-- Feature - 1
+                                        ============================================= -->
+                                        <div class="col-md-6">
+                                            <div class="feature-box media-box bottommargin">
+                                                
+                                                <div class="fbox-desc">
+                                                    <h3 class="text-white">Unlimited Topics</h3>
+                                                    <p class="text-white">Create unlimited topics and get honest reviews from people on any subject ranging from personal choices to political stuffs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Feature - 2
+                                        ============================================= -->
+                                        <div class="col-md-6">
+                                            <div class="feature-box media-box bottommargin">
+                                                
+                                                <div class="fbox-desc">
+                                                    <h3 class="text-white">Private and Public Topics</h3>
+                                                    <p class="text-white">Have full control over who can give you feedbacks. Either show it to the world or get it in private.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Feature - 3
+                                        ============================================= -->
+                                        <div class="col-md-6">
+                                            <div class="feature-box media-box bottommargin">
+                                                
+                                                <div class="fbox-desc">
+                                                    <h3 class="text-white">Professional Feedbacks</h3>
+                                                    <p class="text-white">Get feedbacks from your organization people. Customized solutions for Companies, schools, colleges, doctors and many more</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Feature - 4
+                                        ============================================= -->
+                                        <div class="col-md-6">
+                                            <div class="feature-box media-box bottommargin">
+                                                
+                                                <div class="fbox-desc">
+                                                    <h3 class="text-white">Full Support</h3>
+                                                    <p class="text-white">Full support for professional topics. Get customized solutions for your specific needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Registration Foem
+                                ============================================= -->
+                                <div class="col-lg-4">
+
+                                    <div class="card shadow" data-animate="shake" style="opacity: 1 !important">
+                                        <div class="card-body">
+
+                                            <h4 class="card-title ls-1 mt-4 t700 h5">Register Yourself and Post a Topic!</h4> 
+
+                                            <div class="form-widget"> 
+
+                                                <form class="nobottommargin" id="template-contactform" name="template-contactform" action="/register" method="get" >
+
+                                                    <div class="form-process"></div>
+
+                                                    <div class="col_full">
+                                                        <input type="text" name="name" value="" class="sm-form-control border-form-control required" placeholder="Your Full Name:" />
+                                                    </div>
+                                                    <div class="col_full">
+                                                        <input type="email" name="emailid" value="" class="required email sm-form-control border-form-control" placeholder="Your Email Address:" />
+                                                    </div>
+
+                                                    <div class="col_full">
+                                                        <input type="text" name="phone" value="" class="sm-form-control border-form-control required" placeholder="Your Phone Number:" />
+                                                    </div>
+
+                                                    <div class="col_full">
+                                                        <button class="button button-rounded btn-block button-large bgcolor text-white nott ls0" type="submit" id="template-contactform-submit"  value="submit">Register</button>
+                                                        <br>
+                                                        <small style="display: block; font-size: 12px; margin-top: 15px; color: #AAA;"></small>
+                                                    </div>
+
+                                                    <div class="clear"></div>  
+
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Wave Shape
+                        ============================================= -->
+                        <div class="wave-bottom" style="position: absolute; top: auto; bottom: 0; left: 0; width: 100%; background-image: url('images/wave-3.svg'); height: 12px; z-index: 2; background-repeat: repeat-x; transform: rotate(180deg);"></div>
+
+                    </div>
+                </div>
+
+                <div class="container clearfix" style="margin-top: 100px;">
  
                     <div class="col_one_third nobottommargin">
                         <div class="feature-box fbox-small fbox-center fbox-plain fbox-large nobottomborder">
@@ -282,6 +398,19 @@
                     </div>
                 </div>
 
+                <div class="section mt-1 footer-stick promo-section nobg" style=" padding: 100px 0; overflow: visible">
+                    <div class="container">
+                        <div class="heading-block nobottomborder center">
+                            <h5 class="uppercase ls1 mb-1">Leave no chance and understands what other thinks of you.</h5>
+                            <h2 class="nott ls0">Create your own topic and get <span>Anonymous </span>feedbacks</h2>
+                            <a href="/portal/resources/topics/new?viaResource=&viaResourceId=&viaRelationship=" class="button button-large button-rounded nott ml-0 ls0 mt-4">Create Topic</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
             </div>
 
         </section> 
@@ -291,7 +420,7 @@
 
                 <div class="container">
                     
-                   <div class="row clearfix" style="margin-top:-50px; "  > 
+                   <div class="row clearfix" style="margin-top:-100px; "  > 
                     
                         <div class="col-lg-12 "  >
  
@@ -491,133 +620,10 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
 
-                            <div class="section mt-5 mb-0" style="padding: 120px 0; background-image: url('images/icon-pattern-bg.jpg'); background-size: auto; background-repeat: repeat">
-
-                                <!-- Wave Shape
-                                ============================================= -->
-                                <div class="wave-top" style="position: absolute; top: 0; left: 0; width: 100%; background-image: url('images/wave-3.svg'); height: 12px; z-index: 2; background-repeat: repeat-x;"></div>
-
-                                <div class="container">
-                                    <div class="row">
-
-                                        <div class="col-lg-8">
-                                            <div class="row dark clearfix">
-
-                                                <!-- Feature - 1
-                                                ============================================= -->
-                                                <div class="col-md-6">
-                                                    <div class="feature-box media-box bottommargin">
-                                                        
-                                                        <div class="fbox-desc">
-                                                            <h3 class="text-white">Unlimited Topics</h3>
-                                                            <p class="text-white">Create unlimited topics and get honest reviews from people on any subject ranging from personal choices to political stuffs.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Feature - 2
-                                                ============================================= -->
-                                                <div class="col-md-6">
-                                                    <div class="feature-box media-box bottommargin">
-                                                        
-                                                        <div class="fbox-desc">
-                                                            <h3 class="text-white">Private and Public Topics</h3>
-                                                            <p class="text-white">Have full control over who can give you feedbacks. Either show it to the world or get it in private.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Feature - 3
-                                                ============================================= -->
-                                                <div class="col-md-6">
-                                                    <div class="feature-box media-box bottommargin">
-                                                        
-                                                        <div class="fbox-desc">
-                                                            <h3 class="text-white">Professional Feedbacks</h3>
-                                                            <p class="text-white">Get feedbacks from your organization people. Customized solutions for Companies, schools, colleges, doctors and many more</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Feature - 4
-                                                ============================================= -->
-                                                <div class="col-md-6">
-                                                    <div class="feature-box media-box bottommargin">
-                                                        
-                                                        <div class="fbox-desc">
-                                                            <h3 class="text-white">Full Support</h3>
-                                                            <p class="text-white">Full support for professional topics. Get customized solutions for your specific needs.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- Registration Foem
-                                        ============================================= -->
-                                        <div class="col-lg-4">
-
-                                            <div class="card shadow" data-animate="shake" style="opacity: 1 !important">
-                                                <div class="card-body">
- 
-                                                    <h4 class="card-title ls-1 mt-4 t700 h5">Register Yourself and Post a Topic!</h4> 
-
-                                                    <div class="form-widget"> 
-
-                                                        <form class="nobottommargin" id="template-contactform" name="template-contactform" action="/register" method="get" >
-
-                                                            <div class="form-process"></div>
-
-                                                            <div class="col_full">
-                                                                <input type="text" name="name" value="" class="sm-form-control border-form-control required" placeholder="Your Full Name:" />
-                                                            </div>
-                                                            <div class="col_full">
-                                                                <input type="email" name="emailid" value="" class="required email sm-form-control border-form-control" placeholder="Your Email Address:" />
-                                                            </div>
-
-                                                            <div class="col_full">
-                                                                <input type="text" name="phone" value="" class="sm-form-control border-form-control required" placeholder="Your Phone Number:" />
-                                                            </div>
-
-                                                            <div class="col_full">
-                                                                <button class="button button-rounded btn-block button-large bgcolor text-white nott ls0" type="submit" id="template-contactform-submit"  value="submit">Register</button>
-                                                                <br>
-                                                                <small style="display: block; font-size: 12px; margin-top: 15px; color: #AAA;"></small>
-                                                            </div>
-
-                                                            <div class="clear"></div>  
-
-                                                        </form>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Wave Shape
-                                ============================================= -->
-                                <div class="wave-bottom" style="position: absolute; top: auto; bottom: 0; left: 0; width: 100%; background-image: url('images/wave-3.svg'); height: 12px; z-index: 2; background-repeat: repeat-x; transform: rotate(180deg);"></div>
-
-                            </div>
-  
-
-                            <div class="section mt-5 footer-stick promo-section nobg" style="padding: 100px 0; overflow: visible">
-                                <div class="container">
-                                    <div class="heading-block nobottomborder center">
-                                        <h5 class="uppercase ls1 mb-1">Leave no chance and understands what other thinks of you.</h5>
-                                        <h2 class="nott ls0">Create your own topic and get <span>Anonymous </span>feedbacks</h2>
-                                        <a href="/portal/resources/topics/new?viaResource=&viaResourceId=&viaRelationship=" class="button button-large button-rounded nott ml-0 ls0 mt-4">Create Topic</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
+                             
+                            <div class="line"></div> 
                             <div id="posts" class="post-grid grid-container grid-2 clearfix" data-layout="fitRows">
 
                                 @foreach ($topics as $topic)
