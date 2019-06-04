@@ -110,8 +110,7 @@
                                         <ul>
                                             <li><a href="/s/company"><div>Company Solution</div></a></li>  
                                         </ul>
-                                    </li>
-                                    <li><a href="/about"><div>About</div></a></li> 
+                                    </li> 
                                     <li><a href="/prices"><div>Prices</div></a></li> 
                                     <li><a href="/support"><div>Support</div></a></li> 
                                 </ul>
@@ -144,28 +143,158 @@
             </div>
 
         </header>
+        <section id="slider" class="slider-element clearfix" style="height: 500px; margin-top:-100px;     background-size: cover;">
+            <div class="vertical-middle">
+                <div class="container clearfix">
+
+                    <div class="clearfix center divcenter" style="max-width: 800px;">
+                        <div class="emphasis-title">
+                            <h4 class="font-secondary" style="color: black; font-size: 36px; font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Reviews Platform </h4>
+                            <p style="font-weight: 300; opacity: .7; color: black; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
+                        </div>
+       
+                        <form id="widget-subscribe-form" action="/register" role="form" method="get" class="nobottommargin" data-animate="fadeInUp">
+                            <div class="input-group divcenter">
+                                <input type="email" id="emailid" name="emailid" class="form-control form-control-lg not-dark" placeholder="Enter your Email Address.." style="border: 0; box-shadow: none; overflow: hidden;">
+                                <button type="submit" class="button " style="border-radius: 3px;">Get Started</button>  
+                                 
+                            </div>
+                        </form>
+                      
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="content" style="margin-top:-180px;">
+
+            <div class="content-wrap notoppadding clearfix">
+ 
+                <div class="container topmargin-lg bottommargin-lg clearfix">
+
+                    <div class="divcenter" style="max-width: 960px">
+ 
+                        <div class="tabs tabs-alt tabs-responsive tabs-justify clearfix" id="tab">
+
+                            <ul class="tab-nav clearfix">
+                                <li><a href="#tabs-1"><i class="icon-line2-key"></i>Anonymous Reviews</a></li>
+                                <li><a href="#tabs-2"><i class="icon-line2-social-dropbox"></i>Private Reviews</a></li>
+                                <li><a href="#tabs-3"><i class="icon-line2-drop"></i>Public Reviews</a></li>
+                                <li><a href="#tabs-4"><i class="icon-line2-pointer"></i>Solutions</a></li>
+                            </ul>
+
+                            <div class="tab-container">
+
+                                <div class="tab-content clearfix" id="tabs-1" style="margin-top:-20px;">
+                                    <div class="story-box description-left clearfix">
+                                        <div class="story-box-image">
+                                            <img src="/images/1.jpg" alt="story-image">
+                                        </div>
+                                        <div class="story-box-info">
+                                            <h3 class="story-title">You don't need to worry about revealing your identities</h3>
+                                            <div class="story-box-content">
+                                                <p>The core focus is on getting genuine reviews of anything without revealing your identities. Reviewer details are never shared with anyone.</p>
+                                                <a href="/register" class="t300  noleftmargin button-rounded">Register to see</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content clearfix" id="tabs-2" style="margin-top:-20px;">
+                                    <div class="story-box clearfix">
+                                        <div class="story-box-image">
+                                            <img src="/images/2.jpg" alt="story-image">
+                                        </div>
+                                        <div class="story-box-info">
+                                            <h3 class="story-title">Private Reviews</h3>
+                                            <div class="story-box-content">
+                                                <p>You can get reviews from everyone you asked privately from your workplace</p>
+                                                <a href="/login" class="t300  noleftmargin button-rounded">Login</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content clearfix" id="tabs-3" style="margin-top:-20px;">
+                                    <div class="story-box description-left clearfix">
+                                        <div class="story-box-image">
+                                            <img src="/images/3.jpg" alt="story-image">
+                                        </div>
+                                        <div class="story-box-info">
+                                            <h3 class="story-title">Public Reviews</h3>
+                                            <div class="story-box-content">
+                                                <p>You can get the reviews from anyone on the public domain, without them asking for registering on the website.</p>
+                                                <a href="/login" class="t300  noleftmargin button-rounded">Login</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content clearfix" id="tabs-4" style="margin-top:-20px;">
+                                    <div class="story-box clearfix">
+                                        <div class="story-box-image">
+                                            <img src="/images/4.jpg" alt="story-image">
+                                        </div>
+                                        <div class="story-box-info">
+                                            <h3 class="story-title">Custom based Solutions</h3>
+                                            <div class="story-box-content">
+                                                <p>Its time for appraisals, its product review time, HR policies.. No worries, we got you covered for all the custom built solutions for the needs.</p>
+                                                <a href="/contact" class="t300  noleftmargin button-rounded">Contact us</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="container clearfix">
+ 
+                    <div class="col_one_third nobottommargin">
+                        <div class="feature-box fbox-small fbox-center fbox-plain fbox-large nobottomborder">
+                            <div class="fbox-icon">
+                                <i class="icon-line2-home"></i>
+                            </div>
+                            <h3 class="ls0 t400 nott" style="font-size: 20px;">Simple Pricing</h3>
+                            <p style="font-size: 16px;">Simple pricing based on users.</p>
+                        </div>
+                    </div>
+                    <div class="col_one_third nobottommargin">
+                        <div class="feature-box fbox-small fbox-center fbox-plain fbox-large nobottomborder">
+                            <div class="fbox-icon">
+                                <i class="icon-line2-compass"></i>
+                            </div>
+                            <h3 class="ls0 t400 nott" style="font-size: 20px;">Secured Reviews</h3>
+                            <p style="font-size: 16px;">Choose to use your own mail server and keep it complete secure within your premises</p>
+                        </div>
+                    </div>
+                    <div class="col_one_third nobottommargin col_last">
+                        <div class="feature-box fbox-small fbox-center fbox-plain fbox-large nobottomborder">
+                            <div class="fbox-icon">
+                                <i class="icon-line2-directions"></i>
+                            </div>
+                            <h3 class="ls0 t400 nott" style="font-size: 20px;">Cloud or In-premise Setup</h3>
+                            <p style="font-size: 16px;">Choose to get the setup installed at cloud or your in-premise</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> 
         <section  id="topicsdetails">
 
             <div class="content-wrap clearfix">
 
                 <div class="container">
                     
-
                    <div class="row clearfix" style="margin-top:-50px; "  > 
                     
                         <div class="col-lg-12 "  >
-
-                            <div class="container clearfix">
-
-                                <div  class="clearfix center divcenter" style="max-width: 800px;">
-                                    <div class="emphasis-title">
-                                        <h4 class="font-secondary" style="color: black; font-size: 36px; font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Reviews Platform </h4>
-                                        <p style="font-weight: 300; opacity: .7; color: black; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
-                                    </div> 
-                                  
-                                </div>
-
-                            </div> 
+ 
 
                             <div class="section m-0" style="background: url('demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 50px 0 0;">
 
