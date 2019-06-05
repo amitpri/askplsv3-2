@@ -507,65 +507,82 @@
 
                             </div>
 
-                            <br>
+                            <br> 
 
-                            <div class="section nobg mt-4 mb-0 pb-0">
-                                <div class="container">
-                                    <div class="heading-block nobottomborder center divcenter mb-0 clearfix" style="max-width: 550px"> 
-                                        <h3 class="nott ls0 mb-3">Professional Categories</h3>
-                                        <p>Anonymous reviews for professional categories</p>
+                            <div class="section topmargin-lg">
+                                <div class="container clearfix">
+
+                                    <div class="heading-block center">
+                                        <h2>Professional Categories</h2>
+                                        <span>Anonymous reviews for professional categories</span>
                                     </div>
-                                    <div class="row justify-content-between align-items-center clearfix">
 
-                                        <div class="col-lg-4 col-sm-6">
+                                    <div class="clear bottommargin-sm"></div>
 
-                                            <div class="feature-box noborder">
-                                                
-                                                <h3 class="nott ls0"><a href="/g/schools">Schools Reviews</a></h3>
-                                                <p>Customized solutions for schools to understand how are the teachers, and what parents are thinking.</p>
+                                    <div class="col_one_third">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn">
+                                            <div class="fbox-icon">
+                                                <a href="/g/schools"><i class="icon-phone2"></i></a>
                                             </div>
-
-                                            <div class="feature-box noborder mt-5">
-                                                 
-                                                <h3 class="nott ls0"><a href="/g/colleges">Doctors Reviews</a></h3>
-                                                <p>Understands the genuine patients feedback for a doctor or hospital.</p>
-                                            </div>
-
-                                            <div class="feature-box  noborder mt-5">
-                                                 
-                                                <h3 class="nott ls0"><a href="/g/companies">Companies Reviews</a></h3>
-                                                <p>Understands employees feedbacks, Get HR initiatives feedbacks, appraisal process reviews</p>
-                                            </div>
-
+                                            <h3>Schools Reviews</h3>
+                                            <p>Customized solutions for schools to understand how are the teachers, and what parents are thinking.</p>
                                         </div>
-
-                                        <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
-                                            <img src="images/askplsmobile.jpeg" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
-                                        </div>
-
-                                        <div class="col-lg-4 col-sm-6">
-
-                                            <div class="feature-box noborder">
-                                                
-                                                <h3 class="nott ls0"><a href="/g/doctors">Colleges Reviews</a></h3>
-                                                <p>College based feedbacks for understanding students thoughts on different teachers and overall improvements.</p>
-                                            </div>
-
-                                            <div class="feature-box noborder mt-5">
-                                                 
-                                                <h3 class="nott ls0"><a href="/g/hotels">Hotels Reviews</a></h3>
-                                                <p>Room Quality, events, new year bashing!! Understand it first and then decide</p>
-                                            </div>
-
-                                            <div class="feature-box noborder mt-5">
-                                                
-                                                <h3 class="nott ls0"><a href="/g/restaurants">Restaurants Reviews</a></h3>
-                                                <p>How is the food, how did staff behave with customers.</p>
-                                            </div>
-
-                                        </div>
-
                                     </div>
+
+                                    <div class="col_one_third">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn" data-delay="200">
+                                            <div class="fbox-icon">
+                                                <a href="/g/doctors"><i class="icon-eye"></i></a>
+                                            </div>
+                                            <h3>Doctors Reviews</h3>
+                                            <p>Understands the genuine patients feedback for a doctor or hospital.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col_one_third col_last">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn" data-delay="400">
+                                            <div class="fbox-icon">
+                                                <a href="/g/companies"><i class="icon-star2"></i></a>
+                                            </div>
+                                            <h3>Companies Reviews</h3>
+                                            <p>Understands employees feedbacks, Get HR initiatives feedbacks, appraisal process reviews</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="clear"></div>
+
+                                    <div class="col_one_third">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn" data-delay="600">
+                                            <div class="fbox-icon">
+                                                <a href="/g/colleges"><i class="icon-video"></i></a>
+                                            </div>
+                                            <h3>Colleges Reviews</h3>
+                                            <p>College based feedbacks for understanding students thoughts on different teachers and overall improvements.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col_one_third">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn" data-delay="800">
+                                            <div class="fbox-icon">
+                                                <a href="/g/hotels"><i class="icon-params"></i></a>
+                                            </div>
+                                            <h3>Hotels Reviews</h3>
+                                            <p>Room Quality, events, new year bashing!! Understand it first and then decide</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col_one_third col_last">
+                                        <div class="feature-box fbox-border fbox-effect" data-animate="fadeIn" data-delay="1000">
+                                            <div class="fbox-icon">
+                                                <a href="/g/restaurants"><i class="icon-fire"></i></a>
+                                            </div>
+                                            <h3>Restaurants Reviews</h3>
+                                            <p>How is the food, how did staff behave with customers.</p>
+                                        </div>
+                                    </div> 
+
+                                    <div class="clear"></div>
+
                                 </div>
                             </div>
 
