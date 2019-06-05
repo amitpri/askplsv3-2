@@ -530,8 +530,8 @@
 
 					<div class="row">
 						<div class="col-12">
-							<p class="mb-2 text-white-50">Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.</p>
-							<div class="copyright-links text-white-50"><a href="#" class="text-white-50">Terms of Use</a> / <a href="#" class="text-white-50">Privacy Policy</a></div>
+							<p class="mb-2 text-white-50">Copyrights © 2019 All Rights Reserved by AskPls.</p>
+							 
 						</div>
 					</div>
 
