@@ -140,7 +140,7 @@
             </div>
 
         </header>
-        <section id="slider" class="slider-element clearfix" style="height: 500px; margin-top:-20px;     background-size: cover;">
+        <section id="slider" class="slider-element clearfix" style="height: 500px; margin-top:-100px;     background-size: cover;">
             <div class="vertical-middle">
                 <div class="container clearfix">
 
@@ -153,10 +153,7 @@
                         <form id="widget-subscribe-form" action="/register" role="form" method="get" class="nobottommargin" data-animate="fadeInUp">
                             <div class="input-group divcenter">
                                 <input type="email" id="emailid" name="emailid" class="form-control form-control-lg not-dark" placeholder="Enter your Email Address.." style="border: 0; box-shadow: none; overflow: hidden;">
-
-                                <div class="col-md-4 col-lg-3">
-                                    <button type="submit" class="button  btn-block" style="border-radius: 3px;">Get Started</button>  
-                                </div>
+                                <button type="submit" class="button " style="border-radius: 3px;">Get Started</button>  
                                  
                             </div>
                         </form>
@@ -407,7 +404,10 @@
                         </div>
                     </div>
                 </div>
- 
+
+
+                
+
             </div>
 
         </section> 
@@ -654,8 +654,8 @@
 
             </div>
   
-        </section> 
 
+        </section> 
         <footer id="footer" class="topmargin noborder" style="background-color: #F5F5F5;">          
 
             <div class="line nomargin"></div>
