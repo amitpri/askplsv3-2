@@ -113,8 +113,7 @@
                                         <ul>
                                             <li><a href="/s/company"><div>Company Solution</div></a></li>  
                                         </ul>
-                                    </li>
-                                    <li><a href="/about"><div>About</div></a></li> 
+                                    </li> 
                                     <li><a href="/prices"><div>Prices</div></a></li> 
                                     <li><a href="/support"><div>Support</div></a></li> 
                                 </ul>
