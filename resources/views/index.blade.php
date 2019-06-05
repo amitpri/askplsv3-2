@@ -587,53 +587,53 @@
                             </div>
 
                             <div class="section nobg mt-4 mb-0 pb-0">
-                                <div class="container">
-                                    <div class="heading-block nobottomborder center divcenter mb-0 clearfix" style="max-width: 550px"> 
-                                        <h3 class="nott ls0 mb-3">Personal Topics</h3>
-                                        <p>Anonymous reviews for professional categories</p>
+                                <div class="container clearfix"> 
+
+                                    <div class="heading-block center">
+                                        <h2>Personal Topics</h2>
+                                        <span>Choose from all the relevant categories</span>
                                     </div>
-                                    <div class="row justify-content-between align-items-center clearfix">
 
-                                        <div class="col-lg-6 col-sm-6">
-
-                                            <div class="feature-box noborder">
-                                                
-                                                <h3 class="nott ls0">Personal Topics</h3> 
+                                    <div class="col_one_third nobottommargin">
+                                        <div class="feature-box media-box">
+                                            <div class="fbox-media">
+                                                <img src="images/services/1.jpg" alt="Personal Topics">
+                                            </div>
+                                            <div class="fbox-desc">
+                                                <h3>Personal Topics</h3>
                                                 <p>How do I look in this Instagram picture?</p> 
                                                 <p>ohh!! I love her so much. What to do? </p> 
                                             </div>
+                                        </div>
+                                    </div>
 
-                                            <div class="feature-box   noborder mt-5">
-                                                
-                                                <h3 class="nott ls0">Political Topics</h3>
+                                    <div class="col_one_third nobottommargin">
+                                        <div class="feature-box media-box">
+                                            <div class="fbox-media">
+                                                <img src="images/services/2.jpg" alt="Why choose Us?">
+                                            </div>
+                                            <div class="fbox-desc">
+                                                <h3>Political Topics</h3>
                                                 <p>Rafael deal? really an issue?</p>
                                                 <p>When will court complete hearing on Ram Temple</p> 
                                             </div>
+                                        </div>
+                                    </div>
 
-                                        </div> 
-
-                                        <div class="col-lg-6 col-sm-6">
-
-                                            <div class="feature-box noborder">
-                                               
-                                                <h3 class="nott ls0">Current Affairs Topics</h3>
+                                    <div class="col_one_third nobottommargin col_last">
+                                        <div class="feature-box media-box">
+                                            <div class="fbox-media">
+                                                <img src="images/services/3.jpg" alt="Why choose Us?">
+                                            </div>
+                                            <div class="fbox-desc">
+                                                <h3>Current Affairs Topics</h3>
                                                 <p>India and Pak conflict</p>
                                                 <p>H1B policy</p> 
-                                            </div> 
-
-
-
-                                            <div class="feature-box  noborder mt-5">
-                                              
-                                                <h3 class="nott ls0">Movies Topics</h3>
-                                                <p>Feedback for Manmarziyaan</p>
-                                                <p>Amitabh new movie</p> 
                                             </div>
-
                                         </div>
-
                                     </div>
-                                </div>
+
+                                </div> 
                             </div> 
 
                              
