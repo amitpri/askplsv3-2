@@ -610,7 +610,7 @@
                                     <div class="col_one_third nobottommargin">
                                         <div class="feature-box media-box">
                                             <div class="fbox-media">
-                                                <img src="images/services/2.jpg" alt="Why choose Us?">
+                                                <img src="images/services/2.jpg" alt="Political Topics">
                                             </div>
                                             <div class="fbox-desc">
                                                 <h3>Political Topics</h3>
@@ -623,7 +623,7 @@
                                     <div class="col_one_third nobottommargin col_last">
                                         <div class="feature-box media-box">
                                             <div class="fbox-media">
-                                                <img src="images/services/3.jpg" alt="Why choose Us?">
+                                                <img src="images/services/3.jpg" alt="Current Affairs Topics">
                                             </div>
                                             <div class="fbox-desc">
                                                 <h3>Current Affairs Topics</h3>
@@ -638,16 +638,17 @@
 
                              
                             <div class="line"></div> 
-                            <div id="posts" class="post-grid grid-container grid-2 clearfix" data-layout="fitRows">
+
+                            <div id="posts" class="post-grid grid-container grid-3 clearfix"  >
 
                                 @foreach ($topics as $topic)
                        
-                                    <div class="entry clearfix">
+                                    <div   class="entry clearfix"   >
                                        
-                                        <div class="entry-title">
+                                        <div class="entry-title" >
                                             <h4><a href="/t/{{ $topic->url }}/{{ str_replace(' ','_',$topic->topic_name) }}">{{ $topic->topic_name}}</a></h4>
                                         </div>
-                                        <ul class="entry-meta clearfix">
+                                        <ul class="entry-meta nobottommargin  nobottompadding clearfix" style="margin-top: -20px; ">
                                             <li><i class="icon-calendar3"></i> {{ $topic->created_at }}</li>
 
                                             @if( $topic->comments > 0)
