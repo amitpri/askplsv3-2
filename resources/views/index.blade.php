@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />  
     <link rel="stylesheet" href="/askplsfonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/interior-design/interior-design.css" type="text/css" />
+    <link rel="stylesheet" href="demos/interior-design/css/fonts.css" type="text/css" />
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/colors.php?color=1c85e8" type="text/css" /> 
@@ -140,33 +142,35 @@
             </div>
 
         </header>
-        <section id="slider" class="slider-element clearfix" style="height: 500px;     background-size: cover;">
+        <section id="slider" class="slider-element clearfix" style="height: 500px; background: url('demos/interior-design/images/hero-image.jpg') center center no-repeat; background-size: cover;">
             <div class="vertical-middle">
                 <div class="container clearfix">
 
-                    <div class="clearfix center divcenter" style="max-width: 800px;">
+                    <div class="clearfix center divcenter" style="max-width: 700px;">
                         <div class="emphasis-title">
-                            <p style="color: black; font-size: 66px; line-height: 80px; font-weight: 500; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Review Platform </p>
-                            <p style="font-size: 24px; font-weight: 300; opacity: .7; color: black; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
+                            <h1 class="font-secondary" style="color: black; font-size: 76px; line-height: 80px;font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Review Platform.</h1>
+                            <p style="font-weight: 300; opacity: .7; color: #FFF; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
                         </div>
-       
-                        <form id="widget-subscribe-form" action="/register" role="form" method="get" class="nobottommargin" data-animate="fadeInUp">
-                            <div class="input-group divcenter">
-                                <input type="email" id="emailid" name="emailid" class="form-control form-control-lg not-dark" placeholder="Enter your Email Address.." style="border: 0; box-shadow: none; overflow: hidden;">
+                         
+                            <div class="widget-subscribe-form-result"></div>
+                            <form id="widget-subscribe-form" action="/register" role="form" method="get" class="nobottommargin" data-animate="fadeInUp">
+                                <div class="input-group divcenter">
+                                    <input type="email" id="emailid" name="emailid" class="form-control form-control-lg not-dark" placeholder="Enter your Email Address.." style="border: 0; box-shadow: none; overflow: hidden;">
 
-                                <div class="col-md-4 col-lg-3">
-                                    <button type="submit" class="button  btn-block" style="border-radius: 3px;">Get Started</button>  
+                                    <div class="col-md-4 col-lg-3">
+                                        <button type="submit" class="button  btn-block" style="border-radius: 3px;">Get Started</button>  
+                                    </div>
+                                     
                                 </div>
-                                 
-                            </div>
-                        </form>
-                      
+                            </form>
+
+                        
                     </div>
 
                 </div>
             </div>
 
-        </section>
+        </section> 
 
         <section id="content" style="margin-top:-150px;">
 
