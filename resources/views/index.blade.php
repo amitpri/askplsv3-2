@@ -142,13 +142,13 @@
             </div>
 
         </header>
-        <section id="slider" class="slider-element clearfix" style="height: 500px; background: url('demos/interior-design/images/hero-image.jpg') center center no-repeat; background-size: cover;">
+        <section id="slider" class="slider-element clearfix" style="height: 400px; background: url('demos/interior-design/images/1.jpg') center center no-repeat; background-size: cover;">
             <div class="vertical-middle">
                 <div class="container clearfix">
 
                     <div class="clearfix center divcenter" style="max-width: 700px;">
                         <div class="emphasis-title">
-                            <h1 class="font-secondary" style=" font-size: 76px; line-height: 80px;font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Review Platform.</h1>
+                            <h1 class="font-secondary" style="color: #FFF; font-size: 76px; line-height: 80px;font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Review Platform.</h1>
                             <p style="font-weight: 300; opacity: .7; color: #FFF; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
                         </div>
                          
