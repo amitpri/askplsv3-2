@@ -21,7 +21,7 @@
 
     @include('analytics')
  
-    <title>AskPls | Anonymous Review Platform</title>
+    <title>Ask Please | Anonymous Review Platform</title>
 
 </head>
 
@@ -108,7 +108,7 @@
                                             <li><a href="/s/company"><div>Company Solution</div></a></li>  
                                         </ul>
                                     </li> 
-                                    <li><a href="/prices"><div>Prices</div></a></li> 
+                                    <li><a href="/prices"><div>Pricing</div></a></li> 
                                     <li><a href="/support"><div>Support</div></a></li> 
                                 </ul>
                             </nav> 
@@ -140,14 +140,14 @@
             </div>
 
         </header>
-        <section id="slider" class="slider-element clearfix" style="height: 500px; margin-top:-20px;     background-size: cover;">
+        <section id="slider" class="slider-element clearfix" style="height: 500px;     background-size: cover;">
             <div class="vertical-middle">
                 <div class="container clearfix">
 
                     <div class="clearfix center divcenter" style="max-width: 800px;">
                         <div class="emphasis-title">
-                            <h4 class="font-secondary" style="color: black; font-size: 36px; font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Reviews Platform </h4>
-                            <p style="font-weight: 300; opacity: .7; color: black; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
+                            <p style="color: black; font-size: 66px; line-height: 80px; font-weight: 500; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">Private Anonymous Review Platform </p>
+                            <p style="font-size: 24px; font-weight: 300; opacity: .7; color: black; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">Get genuine Anonymous Feedback from people you care</p>
                         </div>
        
                         <form id="widget-subscribe-form" action="/register" role="form" method="get" class="nobottommargin" data-animate="fadeInUp">
