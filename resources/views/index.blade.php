@@ -401,7 +401,9 @@
                     </div>
                 </div>
 
-                <div class="section mt-1 footer-stick promo-section nobg" style=" padding: 100px 0; overflow: visible">
+                <div class="line"></div>
+
+                <div class="section mt-0 footer-stick promo-section nobg" style=" padding: 10px 0; overflow: visible">
                     <div class="container">
                         <div class="heading-block nobottomborder center">
                             <h5 class="uppercase ls1 mb-1">Leave no chance and understands what other thinks of you.</h5>
@@ -410,6 +412,8 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="line"></div>
  
             </div>
 
