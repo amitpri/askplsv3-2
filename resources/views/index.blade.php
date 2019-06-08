@@ -142,7 +142,7 @@
             </div>
 
         </header>
-        <section id="slider" class="slider-element clearfix" style="height: 450px; background: url('demos/interior-design/images/1.jpg') center center no-repeat; background-size: cover;">
+        <section id="slider" class="slider-element clearfix" style="height: 500px; background: url('demos/interior-design/images/1.jpg') center center no-repeat; background-size: cover;">
             <div class="vertical-middle">
                 <div class="container clearfix">
 
