@@ -306,9 +306,7 @@ class Topic extends Resource
                 ];
 
             }
- 
-            
- 
+             
         }
       
     }

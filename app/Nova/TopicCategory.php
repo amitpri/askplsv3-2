@@ -91,9 +91,7 @@ class TopicCategory extends Resource
                               'readonly' => true
                         ]]),  
 
-                    Trix::make('Details'), 
-
-                     
+                    Trix::make('Details'),  
 
                     RadioButton::make('Active', 'status')
                     ->options([ 
@@ -139,6 +137,8 @@ class TopicCategory extends Resource
                         } 
 
                     })->hideWhenUpdating(),
+
+                    HasMany::make('Review'),
  
                 ];
 
@@ -222,6 +222,8 @@ class TopicCategory extends Resource
                         } 
 
                     })->hideWhenUpdating(),
+
+                    HasMany::make('Review'),
           
    
                 ]; 

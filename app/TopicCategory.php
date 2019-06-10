@@ -11,7 +11,7 @@ class TopicCategory extends Model
     public function review()
     {
 
-        return $this->hasMany('App\Review');
+        return $this->hasMany('App\Review', 'topic_categories_id', 'id' );
 
     }
 
