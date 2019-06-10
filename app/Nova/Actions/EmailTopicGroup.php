@@ -70,8 +70,7 @@ class EmailTopicGroup extends Action // implements ShouldQueue
                     $profileid = $profile->id; 
                     $mailkey = str_random(50); 
 
-                    $topicname = "Hi";
-                    $username = "Amit";
+                    $topicname = "Hi"; 
 
                     $newmail = TopicMail::create([
 
@@ -81,6 +80,8 @@ class EmailTopicGroup extends Action // implements ShouldQueue
                         'profile_id' => $profileid,
                         'emailid' => $emailid,
                         'mailkey' => $mailkey,
+                        'topic_name' => $topic->topic_name,
+                        'group_title' => $group->title, 
 
                     ]);
 
