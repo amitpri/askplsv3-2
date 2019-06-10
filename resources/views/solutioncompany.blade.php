@@ -330,7 +330,7 @@
 						 
 					</div>
 				</div>
-
+<!--
 				<div class="section" style="padding: 80px 0">
 					<div class="container">
 						<div class="heading-block nobottomborder mb-0">
@@ -447,6 +447,8 @@
 						</div>
 					</div>
 				</div>  
+
+
 				<div class="section nobg clearfix" style="padding: 80px 0">
 					<div class="container">
 						<div class="row justify-content-between align-items-center">
@@ -492,7 +494,7 @@
 						</div>
 					</div>
 				</div>
-
+-->
 				<div class="line"></div>
   
 
@@ -502,8 +504,8 @@
 							<div class="col-md-8 offset-1">
 								<div class="before-heading">Don't Hesitate to Reach out to Us</div>
 									<h2 class="nott t600 display-4">Want to Talk?</h2>
-								<h4 class="t300 mb-4">Call us at <a href="tel:+(61)8-234-532-45">+(61)8-234-532-45</a></h4>
-								<a href="#" class="button button-rounded button-xlarge m-0 nott t600 ls0 px-5">Email Us</a>
+								<h4 class="t300 mb-4">Call us at <a href="tel:+(91)99167 89507">+(91)99167 89507</a></h4>
+								<a href="mailto: support@askpls.com" class="button button-rounded button-xlarge m-0 nott t600 ls0 px-5">Email Us</a>
 							</div>
 						</div>
 					</div>
