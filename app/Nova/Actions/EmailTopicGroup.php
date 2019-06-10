@@ -71,6 +71,7 @@ class EmailTopicGroup extends Action // implements ShouldQueue
                     $mailkey = str_random(50); 
 
                     $topicname = "Hi"; 
+                    $username = "";
 
                     $newmail = TopicMail::create([
 
