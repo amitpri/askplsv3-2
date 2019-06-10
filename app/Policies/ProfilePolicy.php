@@ -115,6 +115,10 @@ class ProfilePolicy
 
             return 1 == 1;
 
+        }elseif( $loggedintopicable_type == 'App\School' && $loggedinpaid == 1 ){
+
+            return 1 == 1;
+
         }else{
 
             return 1 == 2;
