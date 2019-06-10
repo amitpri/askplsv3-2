@@ -141,7 +141,7 @@ class Topic extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/t/' . $this->url . '/topics';
                         }
 
                     })->hideWhenUpdating(),
@@ -221,7 +221,7 @@ class Topic extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/t/' . $this->url . '/topics';
                         }
 
                     })->hideWhenUpdating(), 
@@ -297,7 +297,7 @@ class Topic extends Resource
 
                         if ( $this->type == 'Public'){
 
-                            return 'https://askpls.com/t/' . $this->url;
+                            return 'https://askpls.com/t/' . $this->url . '/topics';
                         }
 
                     })->hideWhenUpdating(), 
