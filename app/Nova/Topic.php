@@ -8,6 +8,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\DateTime;
 
+use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -342,6 +343,7 @@ class Topic extends Resource
             return [
 
                 new EmailTopicGroup, 
+                new DownloadExcel,
             ];
 
         }elseif( $loggedinpaid == 1 && $loggedintopicable_type == 'App\Company'){
@@ -349,12 +351,13 @@ class Topic extends Resource
             return [
 
                 new EmailTopicGroup, 
+                new DownloadExcel,
             ];
 
         }else{
 
             return [
- 
+                new DownloadExcel,
             ];
 
         } 

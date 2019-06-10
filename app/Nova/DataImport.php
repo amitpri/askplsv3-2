@@ -75,7 +75,7 @@ class DataImport extends Resource
 
             new \Sparclex\NovaImportCard\NovaImportCard(\App\Nova\Profile::class),
             new \Sparclex\NovaImportCard\NovaImportCard(\App\Nova\Group::class),
-            new \Sparclex\NovaImportCard\NovaImportCard(\App\Nova\GroupProfile::class),
+      //     new \Sparclex\NovaImportCard\NovaImportCard(\App\Nova\GroupProfile::class),
 
         ];
     }

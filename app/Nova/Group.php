@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Textarea;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest; 
+use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
 
 use App\Nova\Metrics\GroupCount; 
 
@@ -35,7 +36,7 @@ class Group extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
+            ID::make()->sortable()->hideFromIndex()->hideFromDetail(),
 
             HiddenField::make('User', 'user_id')->current_user_id()->hideFromIndex()->hideFromDetail(),
  
@@ -72,6 +73,10 @@ class Group extends Resource
  
     public function actions(Request $request)
     {
-        return [];
+        return [
+
+            new DownloadExcel,
+
+        ];
     }
 }
