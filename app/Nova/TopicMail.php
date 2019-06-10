@@ -41,17 +41,19 @@ class TopicMail extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),     
+            ID::make()->sortable()->hideFromIndex()->hideFromDetail(),       
 
             HiddenField::make('User', 'user_id')->current_user_id()->hideFromIndex()->hideFromDetail(),       
 
-            Text::make('Topic Id', 'topic_id')->sortable()->sortable(),
+            Text::make('Topic Id', 'topic_id')->sortable()->sortable()->hideFromIndex()->hideFromDetail(),  
 
             Text::make('Topic Name')->sortable()->rules('required', 'max:255'), 
 
-            Text::make('Group Id', 'group_id')->sortable(),
+            Text::make('Group Id', 'group_id')->sortable()->hideFromIndex()->hideFromDetail(),  
 
-            Text::make('Profile Id', 'group_id')->sortable(),
+            Text::make('Profile Id', 'group_id')->sortable()->hideFromIndex()->hideFromDetail(),  
+
+            Text::make('Group Title')->sortable()->rules('required', 'max:255'), 
  
             Text::make('Email' , 'emailid')->sortable()->rules('required', 'max:255'),  
 
