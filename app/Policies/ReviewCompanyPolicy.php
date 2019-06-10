@@ -156,6 +156,10 @@ class ReviewCompanyPolicy
 
             return 1 === 1;
 
+        }elseif( $loggedintopicable_type == 'App\School'){
+
+            return 1 === 1;
+
         }else
         {
 

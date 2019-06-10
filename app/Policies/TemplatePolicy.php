@@ -98,7 +98,7 @@ class TemplatePolicy
 
             return 1 === 2;
 
-        }elseif( $loggedintopicable_type == 'App\Company'){
+        }elseif( $loggedintopicable_type == 'App\Company'  || $loggedintopicable_type == 'App\School'){
 
             return 1 === 2;
 

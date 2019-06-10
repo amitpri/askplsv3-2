@@ -140,7 +140,7 @@ if ( $loggedinrole == 'super' ) {
 
         }elseif(  $loggedinrole == 'user' ){
 
-             if( $loggedincatsel_status == 0 || $loggedintopicable_type == 'App\Company' ){
+             if( $loggedincatsel_status == 0 || $loggedintopicable_type == 'App\Company' || $loggedintopicable_type == 'App\School'){
 
                 return 1 === 2;
 
