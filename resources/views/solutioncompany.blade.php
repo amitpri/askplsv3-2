@@ -505,7 +505,8 @@
 								<div class="before-heading">Don't Hesitate to Reach out to Us</div>
 									<h2 class="nott t600 display-4">Want to Talk?</h2>
 								<h4 class="t300 mb-4">Call us at <a href="tel:+(91)99167 89507">+(91)99167 89507</a></h4>
-								<a href="mailto: support@askpls.com" class="button button-rounded button-xlarge m-0 nott t600 ls0 px-5">Email Us</a>
+							 
+
 							</div>
 						</div>
 					</div>
