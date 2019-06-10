@@ -191,6 +191,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         $loggedinemail= Auth::user()->email;
         $loggedinrole = Auth::user()->role;
         $loggedincatsel = Auth::user()->catsel_status;
+        $loggedincatseltype = Auth::user()->catsel_type;
 
         if( $loggedinrole == "super"){
 
@@ -228,6 +229,14 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         
                     ];
 
+                }elseif( $loggedincatseltype == 'personal' ){
+
+                    return [ 
+                        
+                        new TopicCount, 
+                        new ReviewCount,
+                        
+                    ];
                 }else{
 
                     return [ 

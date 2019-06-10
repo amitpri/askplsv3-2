@@ -25,17 +25,18 @@
                             <td><input v-model="inCompany" style="border:2px thick blue;" class="form-control form-control-sm" type="text" placeholder="Enter Company Name"> </td> 
                             <td><button @click="selCompany" type="button" class="btn btn-default btn-primary">Select</button> </td>
                         </tr>   
-                        <tr>
+    <!--                    <tr>
                             <td> Doctor</td>
                             <td><input v-model="inDoctor" style="border:2px thick blue;" class="form-control form-control-sm" type="text" placeholder="Enter Doctor Name"> </td> 
                             <td><button @click="selDoctor" type="button" class="btn btn-default btn-primary">Select</button> </td>
                         </tr>
+    -->
                         <tr>
                             <td> School</td>
                             <td><input v-model="inSchool" style="border:2px thick blue;" class="form-control form-control-sm" type="text" placeholder="Enter School Name"> </td> 
                             <td><button @click="selSchool" type="button" class="btn btn-default btn-primary">Select</button> </td>
                         </tr>
-                        <tr>
+    <!--                    <tr>
                             <td> College</td>
                             <td><input v-model="inCollege" style="border:2px thick blue;" class="form-control form-control-sm" type="text" placeholder="Enter College Name"> </td> 
                             <td><button @click="selCollege" type="button" class="btn btn-default btn-primary">Select</button> </td>
@@ -60,6 +61,7 @@
                             <td><input v-model="inFitness" style="border:2px thick blue;" class="form-control form-control-sm" type="text" placeholder="Enter Fitness Center Name"> </td> 
                             <td><button @click="selFitness" type="button" class="btn btn-default btn-primary">Select</button> </td>
                         </tr>
+    -->
                     </tbody>
                 </table>
 

@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="demos/interior-design/css/fonts.css" type="text/css" />
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/colors.php?color=1c85e8" type="text/css" /> 
-
+    <link rel="stylesheet" href="/css/colors.php?color=1c85e8" type="text/css" />  
     <script async src="embed.js"></script>  
  
 
@@ -253,6 +252,7 @@
                     </div>
 
                 </div> 
+ 
 
                 <div class="container">
                     
@@ -418,6 +418,7 @@
             </div>
 
         </section> 
+
         <section  id="topicsdetails">
 
             <div class="content-wrap clearfix">

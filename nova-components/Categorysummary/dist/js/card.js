@@ -321,291 +321,293 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['card'],
-    data: function data() {
-        return {
+                props: ['card'],
+                data: function data() {
+                                return {
 
-            id: "",
-            inCompany: "",
-            inDoctor: "",
-            inSchool: "",
-            inCollege: "",
-            inHotel: "",
-            inRestaurant: "",
-            inLawyer: "",
-            inFitness: "",
-            catsel_status: -1,
-            catsel_refresh: -1
+                                                id: "",
+                                                inCompany: "",
+                                                inDoctor: "",
+                                                inSchool: "",
+                                                inCollege: "",
+                                                inHotel: "",
+                                                inRestaurant: "",
+                                                inLawyer: "",
+                                                inFitness: "",
+                                                catsel_status: -1,
+                                                catsel_refresh: -1
 
-        };
-    },
+                                };
+                },
 
-    mounted: function mounted() {
-        var _this = this;
+                mounted: function mounted() {
+                                var _this = this;
 
-        axios.get('/categorysummary/get').then(function (response) {
+                                axios.get('/categorysummary/get').then(function (response) {
 
-            _this.catsel_status = response.data;
-        });
-    },
+                                                _this.catsel_status = response.data;
+                                });
+                },
 
-    methods: {
-        selCompany: function selCompany() {
-            var _this2 = this;
+                methods: {
+                                selCompany: function selCompany() {
+                                                var _this2 = this;
 
-            if (this.inCompany == '') {
+                                                if (this.inCompany == '') {
 
-                alert('Please enter the company name');
-            } else {
+                                                                alert('Please enter the company name');
+                                                } else {
 
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
 
-                if (c == true) {
+                                                                if (c == true) {
 
-                    axios.get('/categorysummary/post', {
-                        params: {
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
 
-                            type: 'company',
-                            name: this.inCompany
+                                                                                                                type: 'company',
+                                                                                                                name: this.inCompany
 
-                        }
+                                                                                                }
 
-                    }).then(function (response) {
+                                                                                }).then(function (response) {
 
-                        _this2.catsel_status = 1;
+                                                                                                _this2.catsel_status = 1;
 
-                        _this2.catsel_refresh = 1;
+                                                                                                _this2.catsel_refresh = 1;
 
-                        _this2.$router.go(_this2.$router.currentRoute);
-                    });
+                                                                                                _this2.$router.go(_this2.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selDoctor: function selDoctor() {
+                                                var _this3 = this;
+
+                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                if (c == true) {
+
+                                                                axios.get('/categorysummary/post', {
+                                                                                params: {
+
+                                                                                                type: 'doctor',
+                                                                                                name: this.inDoctor
+
+                                                                                }
+
+                                                                }).then(function (response) {
+
+                                                                                _this3.catsel_status = 1;
+
+                                                                                _this3.catsel_refresh = 1;
+
+                                                                                _this3.$router.go(_this3.$router.currentRoute);
+                                                                });
+                                                }
+                                }, selSchool: function selSchool() {
+                                                var _this4 = this;
+
+                                                if (this.inSchool == '') {
+
+                                                                alert('Please enter the school name');
+                                                } else {
+
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                                if (c == true) {
+
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
+
+                                                                                                                type: 'school',
+                                                                                                                name: this.inSchool
+
+                                                                                                }
+
+                                                                                }).then(function (response) {
+
+                                                                                                _this4.catsel_status = 1;
+
+                                                                                                _this4.catsel_refresh = 1;
+
+                                                                                                _this4.$router.go(_this4.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selCollege: function selCollege() {
+                                                var _this5 = this;
+
+                                                if (this.inCollege == '') {
+
+                                                                alert('Please enter the college name');
+                                                } else {
+
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                                if (c == true) {
+
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
+
+                                                                                                                type: 'college',
+                                                                                                                name: this.inCollege
+
+                                                                                                }
+
+                                                                                }).then(function (response) {
+
+                                                                                                _this5.catsel_status = 1;
+
+                                                                                                _this5.catsel_refresh = 1;
+
+                                                                                                _this5.$router.go(_this5.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selHotel: function selHotel() {
+                                                var _this6 = this;
+
+                                                if (this.inHotel == '') {
+
+                                                                alert('Please enter the hotel name');
+                                                } else {
+
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                                if (c == true) {
+
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
+
+                                                                                                                type: 'hotel',
+                                                                                                                name: this.inHotel
+
+                                                                                                }
+
+                                                                                }).then(function (response) {
+
+                                                                                                _this6.catsel_status = 1;
+
+                                                                                                _this6.catsel_refresh = 1;
+
+                                                                                                _this6.$router.go(_this6.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selRestaurant: function selRestaurant() {
+                                                var _this7 = this;
+
+                                                if (this.inRestaurant == '') {
+
+                                                                alert('Please enter the restaurant name');
+                                                } else {
+
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                                if (c == true) {
+
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
+
+                                                                                                                type: 'restaurant',
+                                                                                                                name: this.inRestaurant
+
+                                                                                                }
+
+                                                                                }).then(function (response) {
+
+                                                                                                _this7.catsel_status = 1;
+
+                                                                                                _this7.catsel_refresh = 1;
+
+                                                                                                _this7.$router.go(_this7.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selLawyer: function selLawyer() {
+                                                var _this8 = this;
+
+                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                if (c == true) {
+
+                                                                axios.get('/categorysummary/post', {
+                                                                                params: {
+
+                                                                                                type: 'lawyer',
+                                                                                                name: this.inLawyer
+
+                                                                                }
+
+                                                                }).then(function (response) {
+
+                                                                                _this8.catsel_status = 1;
+
+                                                                                _this8.catsel_refresh = 1;
+
+                                                                                _this8.$router.go(_this8.$router.currentRoute);
+                                                                });
+                                                }
+                                }, selFitness: function selFitness() {
+                                                var _this9 = this;
+
+                                                if (this.inFitness == '') {
+
+                                                                alert('Please enter the Fitness center name');
+                                                } else {
+
+                                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                                if (c == true) {
+
+                                                                                axios.get('/categorysummary/post', {
+                                                                                                params: {
+
+                                                                                                                type: 'fitness',
+                                                                                                                name: this.inFitness
+
+                                                                                                }
+
+                                                                                }).then(function (response) {
+
+                                                                                                _this9.catsel_status = 1;
+
+                                                                                                _this9.catsel_refresh = 1;
+
+                                                                                                _this9.$router.go(_this9.$router.currentRoute);
+                                                                                });
+                                                                }
+                                                }
+                                }, selPersonal: function selPersonal() {
+                                                var _this10 = this;
+
+                                                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
+
+                                                if (c == true) {
+
+                                                                axios.get('/categorysummary/post', {
+                                                                                params: {
+
+                                                                                                type: 'personal'
+
+                                                                                }
+
+                                                                }).then(function (response) {
+
+                                                                                _this10.catsel_status = 1;
+
+                                                                                _this10.catsel_refresh = 1;
+
+                                                                                _this10.$router.go(_this10.$router.currentRoute);
+                                                                });
+                                                }
+                                }
                 }
-            }
-        }, selDoctor: function selDoctor() {
-            var _this3 = this;
-
-            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-            if (c == true) {
-
-                axios.get('/categorysummary/post', {
-                    params: {
-
-                        type: 'doctor',
-                        name: this.inDoctor
-
-                    }
-
-                }).then(function (response) {
-
-                    _this3.catsel_status = 1;
-
-                    _this3.catsel_refresh = 1;
-
-                    _this3.$router.go(_this3.$router.currentRoute);
-                });
-            }
-        }, selSchool: function selSchool() {
-            var _this4 = this;
-
-            if (this.inSchool == '') {
-
-                alert('Please enter the school name');
-            } else {
-
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-                if (c == true) {
-
-                    axios.get('/categorysummary/post', {
-                        params: {
-
-                            type: 'school',
-                            name: this.inSchool
-
-                        }
-
-                    }).then(function (response) {
-
-                        _this4.catsel_status = 1;
-
-                        _this4.catsel_refresh = 1;
-
-                        _this4.$router.go(_this4.$router.currentRoute);
-                    });
-                }
-            }
-        }, selCollege: function selCollege() {
-            var _this5 = this;
-
-            if (this.inCollege == '') {
-
-                alert('Please enter the college name');
-            } else {
-
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-                if (c == true) {
-
-                    axios.get('/categorysummary/post', {
-                        params: {
-
-                            type: 'college',
-                            name: this.inCollege
-
-                        }
-
-                    }).then(function (response) {
-
-                        _this5.catsel_status = 1;
-
-                        _this5.catsel_refresh = 1;
-
-                        _this5.$router.go(_this5.$router.currentRoute);
-                    });
-                }
-            }
-        }, selHotel: function selHotel() {
-            var _this6 = this;
-
-            if (this.inHotel == '') {
-
-                alert('Please enter the hotel name');
-            } else {
-
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-                if (c == true) {
-
-                    axios.get('/categorysummary/post', {
-                        params: {
-
-                            type: 'hotel',
-                            name: this.inHotel
-
-                        }
-
-                    }).then(function (response) {
-
-                        _this6.catsel_status = 1;
-
-                        _this6.catsel_refresh = 1;
-
-                        _this6.$router.go(_this6.$router.currentRoute);
-                    });
-                }
-            }
-        }, selRestaurant: function selRestaurant() {
-            var _this7 = this;
-
-            if (this.inRestaurant == '') {
-
-                alert('Please enter the restaurant name');
-            } else {
-
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-                if (c == true) {
-
-                    axios.get('/categorysummary/post', {
-                        params: {
-
-                            type: 'restaurant',
-                            name: this.inRestaurant
-
-                        }
-
-                    }).then(function (response) {
-
-                        _this7.catsel_status = 1;
-
-                        _this7.catsel_refresh = 1;
-
-                        _this7.$router.go(_this7.$router.currentRoute);
-                    });
-                }
-            }
-        }, selLawyer: function selLawyer() {
-            var _this8 = this;
-
-            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-            if (c == true) {
-
-                axios.get('/categorysummary/post', {
-                    params: {
-
-                        type: 'lawyer',
-                        name: this.inLawyer
-
-                    }
-
-                }).then(function (response) {
-
-                    _this8.catsel_status = 1;
-
-                    _this8.catsel_refresh = 1;
-
-                    _this8.$router.go(_this8.$router.currentRoute);
-                });
-            }
-        }, selFitness: function selFitness() {
-            var _this9 = this;
-
-            if (this.inFitness == '') {
-
-                alert('Please enter the Fitness center name');
-            } else {
-
-                var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-                if (c == true) {
-
-                    axios.get('/categorysummary/post', {
-                        params: {
-
-                            type: 'fitness',
-                            name: this.inFitness
-
-                        }
-
-                    }).then(function (response) {
-
-                        _this9.catsel_status = 1;
-
-                        _this9.catsel_refresh = 1;
-
-                        _this9.$router.go(_this9.$router.currentRoute);
-                    });
-                }
-            }
-        }, selPersonal: function selPersonal() {
-            var _this10 = this;
-
-            var c = confirm("Sure to Submit with this setting? You will not be able to change it later !!");
-
-            if (c == true) {
-
-                axios.get('/categorysummary/post', {
-                    params: {
-
-                        type: 'personal'
-
-                    }
-
-                }).then(function (response) {
-
-                    _this10.catsel_status = 1;
-
-                    _this10.catsel_refresh = 1;
-
-                    _this10.$router.go(_this10.$router.currentRoute);
-                });
-            }
-        }
-    }
 });
 
 /***/ }),
@@ -702,50 +704,6 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("tr", [
-                    _c("td", [_vm._v(" Doctor")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inDoctor,
-                            expression: "inDoctor"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter Doctor Name"
-                        },
-                        domProps: { value: _vm.inDoctor },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inDoctor = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selDoctor }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
                     _c("td", [_vm._v(" School")]),
                     _vm._v(" "),
                     _c("td", [
@@ -783,226 +741,6 @@ var render = function() {
                           staticClass: "btn btn-default btn-primary",
                           attrs: { type: "button" },
                           on: { click: _vm.selSchool }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v(" College")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inCollege,
-                            expression: "inCollege"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter College Name"
-                        },
-                        domProps: { value: _vm.inCollege },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inCollege = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selCollege }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v(" Hotel")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inHotel,
-                            expression: "inHotel"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter Hotel Name"
-                        },
-                        domProps: { value: _vm.inHotel },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inHotel = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selHotel }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v(" Restaurant")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inRestaurant,
-                            expression: "inRestaurant"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter Restaurant Name"
-                        },
-                        domProps: { value: _vm.inRestaurant },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inRestaurant = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selRestaurant }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v(" Lawyer")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inLawyer,
-                            expression: "inLawyer"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter Lawyer Name"
-                        },
-                        domProps: { value: _vm.inLawyer },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inLawyer = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selLawyer }
-                        },
-                        [_vm._v("Select")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v(" Fitness Centers")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inFitness,
-                            expression: "inFitness"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm",
-                        staticStyle: { border: "2px thick blue" },
-                        attrs: {
-                          type: "text",
-                          placeholder: "Enter Fitness Center Name"
-                        },
-                        domProps: { value: _vm.inFitness },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.inFitness = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-primary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.selFitness }
                         },
                         [_vm._v("Select")]
                       )

@@ -31,6 +31,7 @@ class Lawyer extends Model
            if (Auth::guard($guard)->check()) {
                 
                 $loggedinrole = Auth::user()->role;
+                $loggedinid = Auth::user()->id;
             
                 if( $loggedinrole == 'agent' ){
 
@@ -39,6 +40,11 @@ class Lawyer extends Model
                     $loggedincityname =  City::find($loggedincityid)->name;
                     
                     $builder->where('city', '=', $loggedincityname);
+
+                }
+                if( $loggedinrole == 'user' ){ 
+                    
+                    $builder->where('user_id', '=', $loggedinid);
 
                 }
 
