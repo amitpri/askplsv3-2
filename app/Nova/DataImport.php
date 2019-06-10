@@ -4,6 +4,8 @@ namespace App\Nova;
 
 use Auth;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\DateTime;
+use Laravel\Nova\Fields\Text;
 use Outhebox\NovaHiddenField\HiddenField;
 
 use Illuminate\Http\Request;
@@ -58,17 +60,15 @@ class DataImport extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
+            ID::make()->sortable()->hideFromIndex()->hideFromDetail(),
             HiddenField::make('User', 'user_id')->current_user_id()->hideFromIndex()->hideFromDetail(),
+            Text::make('Type' , 'type')->sortable(),
+            DateTime::make('Created at')->format('DD MMM YYYY, LT')->sortable(),
+
         ];
     }
 
-    /**
-     * Get the cards available for the request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
+ 
     public function cards(Request $request)
     {
         return [
@@ -79,35 +79,19 @@ class DataImport extends Resource
 
         ];
     }
-
-    /**
-     * Get the filters available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
+ 
     public function filters(Request $request)
     {
         return [];
     }
 
-    /**
-     * Get the lenses available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
+ 
     public function lenses(Request $request)
     {
         return [];
     }
 
-    /**
-     * Get the actions available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
-     */
+ 
     public function actions(Request $request)
     {
         return [];
