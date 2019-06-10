@@ -46,14 +46,17 @@ class EmailTopicGroup extends Action // implements ShouldQueue
             foreach ($groups as $group) {
 
                 $group_id = $group->id;
+                $topic_name = $group->topic_name;
+
+                $topic = TopicCompany::where('id','=',$topic_id)->first(['topic_name']);
 
                 $newtopiclog = TopicLog::create([
 
                     'user_id' => $loggedinid,
                     'topic_id' => $topic_id,
                     'group_id' => $group_id,
-                    'topic_name' => $topic_id,
-                    'group_title' => $group_id, 
+                    'topic_name' => $topic->topic_name,
+                    'group_title' => $group->title, 
 
                 ]);
  

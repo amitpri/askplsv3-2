@@ -46,7 +46,7 @@ class TopicLog extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),   
+            ID::make()->sortable()->hideFromIndex()->hideFromDetail(),   
 
             HiddenField::make('User', 'user_id')->current_user_id()->hideFromIndex()->hideFromDetail(),
 
