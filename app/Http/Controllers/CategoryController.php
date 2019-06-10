@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+
 use App\Doctor;
 use App\Lawyer;
 use App\Company;
@@ -94,13 +96,20 @@ class CategoryController extends Controller
     	$user_code = $url;
         $categorytype = "Doctors";
 
-        $user = Doctor::where('doctorkey','=',$url)->first(['id','doctorkey AS user_code', 'name']);
+        $user = Doctor::where('doctorkey','=',$url)->first(['id','doctorkey AS user_code', 'name', 'city', 'country' , 'address', 'speciality', 'qualification' , 'exp']);
 
 		$topicable = "App\Doctor";
 
 
         $id = $user->id;
         $name = $user->name;
+        $address = $user->address;
+        $city = $user->city;
+        $country = $user->country;
+        $speciality = $user->speciality;
+        $type = "";
+        $qualification = $user->qualification;
+        $exp = $user->exp;
          
         $topic = ShowTopicCategory::where('topicable_type', '=', $topicable)->where('topicable_id', '=', $id)->first(['id']);
 
@@ -121,7 +130,20 @@ class CategoryController extends Controller
 
         }
 
-        return view('viewprofiledoctor', compact('id', 'user_code', 'categorytype', 'name'));
+        $topics = DB::select("SELECT  a.`id`,  a.`url` , a.`user_id`,  a.`topic_name`
+                                    , DATE_FORMAT(a.`created_at`, '%d-%b-%Y')  created_at ,
+                                    (case when (a.`anonymous` = 0) then c.`user_code` else '-1' end) as user_code,
+                                    (case when (a.`anonymous` = 0) then c.`name` else '-1' end) as user_name
+                                FROM `topic_categories` a ,  `doctors` b, `users` c
+                                        WHERE b.`id` = :id
+                                        AND a.`user_id` = c.`id`
+                                        AND b.`doctorkey` = :user_code
+                                        AND a.`topicable_id` = b.`id` 
+                                        AND a.`topicable_type` like  '%Doctor%' 
+                                        ORDER BY a.`updated_at` DESC
+                                        limit 10", ['id' => $id, 'user_code' => $user_code]);
+
+        return view('viewprofiledoctor', compact('topics', 'id', 'user_code', 'categorytype', 'name', 'address' , 'city' , 'country', 'speciality', 'type','qualification' , 'exp'));
 
     }
 

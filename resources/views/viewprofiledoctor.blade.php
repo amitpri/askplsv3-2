@@ -4,7 +4,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="AskPls" />
-    <meta name="description" content="AskPls | {{ $categorytype}} | {{ $inpname }} Reviews">
+    <meta name="description" content="AskPls | {{ $categorytype}} | {{ $name }} Reviews">
 
     <!-- Stylesheets
     ============================================= -->
@@ -173,7 +173,7 @@
                         </div>
                         <br>
                         <h1>{{ $name }} </h1>
-                        <span> {{ $address}}</span>
+                        <span> {{ $address || null}}</span>
                         <span> {{ $type }} &nbsp;  {{ $city}} &nbsp;  {{ $country}}</span>
                         <span><p v-if="inpWebsite" style="font-weight: 600;   color: black;  "><a target="_blank" :href="inpWebsite"> Website Link</a></p></span> 
                         
@@ -183,7 +183,10 @@
                         <span><p  v-html="inpDetails"></p></span>
 
                         <p v-if="categorytype == 'Doctors'" style="font-weight: 600; opacity: 1; color: black;  "> {{ $speciality}} </p>
-                        <p v-if="categorytype == 'Doctors'" style="font-weight: 600; opacity: 1; color: black;  "> {{ $qualification}}, &nbsp;  {{ $exp}} yrs experience </p>
+                        <p v-if="categorytype == 'Doctors'" style="font-weight: 600; opacity: 1; color: black;  "> {{ $qualification}}  &nbsp; 
+                            @if ( $exp > 0)
+                             {{ $exp}} yrs experience 
+                            @endif</p>
                         <p v-if="categorytype == 'Hotels'" style="font-weight: 600; opacity: 1; color: black;  "> {{ $type}} </p>
                         <p v-if="categorytype == 'Restaurants'" style="font-weight: 600; opacity: 1; color: black;  "> {{ $type}} </p>
 
@@ -277,7 +280,7 @@
                     categorytype:  "{!! $categorytype !!}",
 					url:"", 
 					inpUrl: "",  
-					inpName: "",
+					inpName: "{!! $name !!}",
                     inpLocality: "",
 					inpCity: "",
 					inpCountry: "",
