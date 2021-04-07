@@ -285,7 +285,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Categorysummary",
-                "reference": "553298ddb22e76abbaa3b41b45dc9659c3af2aa2"
+                "reference": "0e17ecebd26f26c3c0ee01fdf88673da2b9165dc"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -310,7 +310,10 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "askpls/category",
@@ -318,7 +321,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Category",
-                "reference": "acf90b161816f74966a131e2abdef6b6935acc72"
+                "reference": "e79098145ffefe00f5b7d20e26becb1fca1c8ee8"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -343,7 +346,10 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "askpls/payments",
@@ -351,7 +357,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Payments",
-                "reference": "5cd653b770370967755dec62e92712ff1a77e5bb"
+                "reference": "5b80fdb486492c2fb2130e0bbeb0c2de0b36503a"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -376,7 +382,10 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "askpls/work",
@@ -384,7 +393,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Work",
-                "reference": "8c4fe12b8ff2da87966a53d46db8d6a3206949af"
+                "reference": "6886b0e30a9573d6b20193e06eaadff4aa4a742c"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -409,7 +418,10 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "askpls/workspacesummary",
@@ -417,7 +429,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Workspacesummary",
-                "reference": "2a3f0ac6e8646cf88176569e37f8c5620b6a90a0"
+                "reference": "c7cfecbca0052fa7490bba196469aba497e1467c"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -442,19 +454,22 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "benjaminhirsch/nova-slug-field",
             "version": "1.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/benjaminhirsch/nova-slug-field.git",
+                "url": "https://github.com/tomhatzer/nova-slug-field.git",
                 "reference": "4c5cee9adc12256e6cd89c3761f203f660e83568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminhirsch/nova-slug-field/zipball/4c5cee9adc12256e6cd89c3761f203f660e83568",
+                "url": "https://api.github.com/repos/tomhatzer/nova-slug-field/zipball/4c5cee9adc12256e6cd89c3761f203f660e83568",
                 "reference": "4c5cee9adc12256e6cd89c3761f203f660e83568",
                 "shasum": ""
             },
@@ -1951,6 +1966,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -1997,6 +2013,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -2208,7 +2225,7 @@
             "dist": {
                 "type": "path",
                 "url": "./portal",
-                "reference": "3f3e9f1b67293b957f5c96da00a8da56f7e263ff"
+                "reference": "c57798a0c5fe31b4f1aacca4f1350c9d0c30adca"
             },
             "require": {
                 "cakephp/chronos": "~1.0",
@@ -2262,7 +2279,10 @@
             "keywords": [
                 "admin",
                 "laravel"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/scout",
@@ -3089,6 +3109,7 @@
                 "bcmath",
                 "math"
             ],
+            "abandoned": "brick/math",
             "time": "2017-02-16T16:54:46+00:00"
         },
         {
@@ -3760,16 +3781,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.17",
+            "version": "2.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "3ca5b88d582c69178c8d01fd9d02b94e15042bb8"
+                "reference": "233a920cb38636a43b18d428f9a8db1f0a1a08f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/3ca5b88d582c69178c8d01fd9d02b94e15042bb8",
-                "reference": "3ca5b88d582c69178c8d01fd9d02b94e15042bb8",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/233a920cb38636a43b18d428f9a8db1f0a1a08f4",
+                "reference": "233a920cb38636a43b18d428f9a8db1f0a1a08f4",
                 "shasum": ""
             },
             "require": {
@@ -3777,8 +3798,7 @@
             },
             "require-dev": {
                 "phing/phing": "~2.7",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
-                "sami/sami": "~2.0",
+                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
                 "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
@@ -3848,19 +3868,33 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2019-05-26T20:38:34+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-04-06T13:56:45+00:00"
         },
         {
             "name": "predis/predis",
             "version": "v1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nrk/predis.git",
+                "url": "https://github.com/predis/predis.git",
                 "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "url": "https://api.github.com/repos/predis/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
                 "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
                 "shasum": ""
             },
@@ -3897,6 +3931,16 @@
                 "nosql",
                 "predis",
                 "redis"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/tillkruss",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tillkruss",
+                    "type": "github"
+                }
             ],
             "time": "2016-06-16T16:22:20+00:00"
         },
@@ -4407,17 +4451,17 @@
             ],
             "authors": [
                 {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                },
+                {
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
                 {
                     "name": "Thibaud Fabre",
                     "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
                 }
             ],
             "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
@@ -4734,6 +4778,7 @@
                 "laravel",
                 "nova"
             ],
+            "abandoned": "anaseqal/nova-import",
             "time": "2018-11-23T13:49:46+00:00"
         },
         {
@@ -6243,12 +6288,12 @@
             "version": "v0.1.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/nova-google-analytics.git",
+                "url": "https://github.com/tighten/nova-google-analytics.git",
                 "reference": "f1c31d0aab3493f01f2bb06e1a35de44deeffd12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/nova-google-analytics/zipball/f1c31d0aab3493f01f2bb06e1a35de44deeffd12",
+                "url": "https://api.github.com/repos/tighten/nova-google-analytics/zipball/f1c31d0aab3493f01f2bb06e1a35de44deeffd12",
                 "reference": "f1c31d0aab3493f01f2bb06e1a35de44deeffd12",
                 "shasum": ""
             },
@@ -6503,6 +6548,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-04-29T21:11:00+00:00"
         }
     ],
@@ -6733,6 +6779,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2018-07-12T10:23:15+00:00"
         },
         {
@@ -7527,6 +7574,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2018-10-30T05:52:18+00:00"
         },
         {
@@ -8224,12 +8272,12 @@
             "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
@@ -8279,5 +8327,6 @@
     "platform": {
         "php": "^7.1.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
